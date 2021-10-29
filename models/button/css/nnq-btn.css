@@ -26,6 +26,10 @@
 	border-color: #DDDDDD;
 }
 
+.nnq-btn:active {
+	opacity: 0.9;
+}
+
 .nnq-btn-default {
 	color: white;
 	border-color: black;
@@ -148,17 +152,17 @@
 
 /* outline btn */
 .nnq-btn-outline-default {
-	color: black;
+	color: gray;
 	border-color: black;
-	color: var(--nnq-black-color);
+	color: var(--nnq-gray-color);
 	border-color: var(--nnq-black-color);
 }
 
 .nnq-btn-outline-default:hover {
-	color: white;
+	color: gray;
 	background-color: black;
-	color: var(--nnq-white-color);
-	background-color: var(--nnq-black-color);
+	color: var(--nnq-black-color);
+	background-color: var(--nnq-gray-color);
 }
 
 .nnq-btn-outline-default:disabled,
@@ -287,19 +291,35 @@
 	cursor: not-allowed;
 }
 
-/* btn size */
-.nnq-btn-bg{
-	font-size: 1.3em;
-	padding: 6px 12px;
+/* round css */
+.nnq-btn-round-full {
+	border-radius: 40px;
 }
 
-.nnq-btn-md{
-	font-size: 1.2em;
-	padding: 6px 12px;
+/* round css */
+.nnq-btn-round {
+	border-radius: 4px;
+}
+
+.nnq-btn-circle {
+	border-radius: 50%;
+}
+
+/* btn size */
+.nnq-btn-bg {
+	padding: 12px 24px;
+}
+
+.nnq-btn-md {
+	padding: 8px 16px;
+}
+
+.nnq-btn-sm {
+	padding: 3px 6px;
 }
 
 /* tool css */
-.nnq-disabled {
+.disabled {
 	opacity: .65;
 	pointer-events: none;
 }
