@@ -1,0 +1,57 @@
+/* nnq-tbl css */
+.nnq-tbl{
+    width: 100%;
+	max-width: 100%;
+	border-spacing: 0px;
+	/* merge border */
+	border-collapse: collapse;
+	/* fixed td */
+	table-layout: fixed;
+    color: #606266;
+}
+
+/* table header css */
+.nnq-tbl .nnq-tbl-header{
+    color: #909399;
+    font-weight: bolder;
+    background-color: #f5f7fa;
+}
+
+/* table body css */
+.nnq-tbl-body{
+
+}
+
+.nnq-tbl td,
+.nnq-tbl th{
+    border-bottom: 1px solid #ebeef5;
+    padding:12px 0px;
+}
+
+/* table checkbox css */
+.nnq-tbl-checkbox{
+    width: 6%;
+}
+
+/* table cell css */
+.nnq-tbl .nnq-cell{
+    padding: 0px 10px;
+    overflow: hidden;
+    text-align: left;
+}
+
+/* table border css */
+.nnq-tbl--border th,
+.nnq-tbl--border td{
+    border: 1px solid #ebeef5;
+}
+
+/* table event css */
+.nnq-tbl--hover tr:hover{
+    background-color: #f5f7fa;
+}
+
+/* TABLE TR CSS */
+.nnq-tbl--color tr:nth-child(even) {
+	background-color: #fcf7f7;
+}
