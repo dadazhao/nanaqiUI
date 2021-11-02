@@ -1,0 +1,154 @@
+
+.nnq-form-group {
+	margin-bottom: 15px;
+}
+
+.nnq-form-control {
+	width: 100%;
+	display: block;
+	outline: none;
+	padding: 10px 20px;
+	font-size: 1em;
+	font-weight: 500;
+}
+
+.nnq-form-chk input[type="checkbox"]{
+	display: none;
+}
+
+.nnq-form-chk i{
+	font-style: normal;
+	display: inline-block;
+}
+
+.nnq-form-chk i::before{
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	cursor: pointer;
+	text-align: center;
+	border:gray solid 1px;
+	margin-right: 3px;
+}
+
+.nnq-form-chk input[type="checkbox"]+i::before{
+	content: '√';
+}
+
+.nnq-form-chk input[type="checkbox"]:checked+i:before{
+	content: '　';
+}
+
+.nnq-form-chk--primary i::before{
+	color: white;
+	border: 0px;
+	background-color: #0993fc;
+	background-color: var(--nnq-primary-color);
+}
+
+.nnq-form-chk--secondary i::before{
+	color: white;
+	border: 0px;
+	background-color: #babbbc;
+	background-color: var(--nnq-secondary-color);
+}
+
+.nnq-form-chk--success i::before{
+	color: white;
+	border: 0px;
+	background-color: #37dd28;
+	background-color: var(--nnq-success-color);
+}
+
+.nnq-form-chk--danger i::before{
+	color: white;
+	border: 0px;
+	background-color: #e9433d;
+	background-color: var(--nnq-danger-color);
+}
+
+.nnq-form-chk--warning i::before{
+	color: white;
+	border: 0px;
+	background-color: #fdaf1d;
+	background-color: var(--nnq-warning-color);
+}
+
+.nnq-form-chk--info i::before{
+	color: white;
+	border: 0px;
+	background-color: #0dcaf1;
+	background-color: var(--nnq-info-color);
+}
+
+
+.nnq-form-rd input[type="radio"]{
+	display: none;
+}
+
+.nnq-form-rd i{
+	font-style: normal;
+	display: inline-block;
+}
+
+.nnq-form-rd i::before{
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	cursor: pointer;
+	text-align: center;
+	border-radius: 40px;
+	margin-right: 3px;
+}
+
+.nnq-form-rd input[type="radio"]+i::before{
+	border: gray solid 2px;
+	content: '　';
+}
+
+.nnq-form-rd input[type="radio"]:checked+i:before{
+	background-color: gray;
+	box-shadow: inset 0 0 0 3px #f4f4f4;
+}
+
+.nnq-form-rd--primary i::before{
+	color: white;
+	border: 0px;
+	background-color: #0993fc;
+	background-color: var(--nnq-primary-color);
+}
+
+.nnq-form-rd--secondary i::before{
+	color: white;
+	border: 0px;
+	background-color: #babbbc;
+	background-color: var(--nnq-secondary-color);
+}
+
+.nnq-form-rd--success i::before{
+	color: white;
+	border: 0px;
+	background-color: #37dd28;
+	background-color: var(--nnq-success-color);
+}
+
+.nnq-form-rd--danger i::before{
+	color: white;
+	border: 0px;
+	background-color: #e9433d;
+	background-color: var(--nnq-danger-color);
+}
+
+.nnq-form-rd--warning i::before{
+	color: white;
+	border: 0px;
+	background-color: #fdaf1d;
+	background-color: var(--nnq-warning-color);
+}
+
+.nnq-form-rd--info i::before{
+	color: white;
+	border: 0px;
+	background-color: #0dcaf1;
+	background-color: var(--nnq-info-color);
+}

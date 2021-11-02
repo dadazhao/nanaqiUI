@@ -31,9 +31,9 @@
 }
 
 .nnq-btn-default {
-	color: white;
+	color: gray;
 	border-color: black;
-	background-color: black;
+	background-color: white;
 }
 
 .nnq-btn-default:hover {
