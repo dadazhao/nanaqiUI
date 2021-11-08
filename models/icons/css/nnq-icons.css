@@ -1,5 +1,5 @@
 [class*="nnq-icon-"], [class^="nnq-icon-"] {
-    font-family: element-icons!important;
+    font-family: nanaqi-icons!important;
     speak: none;
     font-style: normal;
     font-weight: 400;
@@ -12,6 +12,231 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+.nnq-icon-up-arrows:before{
+	content: '\E001';
+}
+
+.nnq-icon-down-arrows:before{
+	content: '\E002';
+}
+
+.nnq-icon-left-arrows:before{
+	content: '\E003';
+}
+
+.nnq-icon-right-arrows:before{
+	content: '\E004';
+}
+
+.nnq-icon-up-triangle:before{
+	content: '\E005';
+}
+.nnq-icon-down-triangle:before{
+	content: '\E006';
+}
+.nnq-icon-left-triangle:before{
+	content: '\E007';
+}
+.nnq-icon-right-triangle:before{
+	content: '\E008';
+}
+
 .nnq-icon-plus-circle:before{
-	content: '∨';
+	content: '\E009';
+}
+
+.nnq-icon-minus-circle:before{
+	content: '\E00A';
+}
+
+.nnq-icon-plus:before{
+	content: '\E00B';
+}
+
+.nnq-icon-minus:before{
+	content: '\E00C';
+}
+
+.nnq-icon-blod:before{
+	content: '\E00D';
+}
+
+.nnq-icon-italic:before{
+	content: '\E00E';
+}
+
+.nnq-icon-underline:before{
+	content: '\E00F';
+}
+
+.nnq-icon-cross:before{
+	content: '\E010';
+}
+
+.nnq-icon-checkmark:before{
+	content: '\E011';
+}
+
+.nnq-icon-download:before{
+	content: '\E012';
+}
+
+.nnq-icon-omit:before{
+	content: '\E013';
+}
+
+.nnq-icon-star:before{
+	content: '\E014';
+}
+
+.nnq-icon-starspace:before{
+	content: '\E015';
+}
+
+.nnq-icon-starhalf:before{
+	content: '\E016';
+}
+
+.nnq-icon-upload:before{
+	content: '\E017';
+}
+
+.nnq-icon-reload:before{
+	content: '\E018';
+}
+
+.nnq-icon-center:before{
+	content: '\E019';
+}
+
+.nnq-icon-atright:before{
+	content: '\E01A';
+}
+
+.nnq-icon-atleft:before{
+	content: '\E01B';
+}
+
+.nnq-icon-user:before{
+	content: '\E01C';
+}
+
+.nnq-icon-usergroup:before{
+	content: '\E01D';
+}
+
+.nnq-icon-updown:before{
+	content: '\E01E';
+}
+
+.nnq-icon-menu:before{
+	content: '\E01F';
+}
+
+.nnq-icon-first:before{
+	content: '\E021';
+}
+
+.nnq-icon-end:before{
+	content: '\E022';
+}
+
+.nnq-icon-refresh1:before{
+	content: '\E023';
+}
+
+.nnq-icon-refresh2:before{
+	content: '\E024';
+}
+
+.nnq-icon-search:before{
+	content: '\E025';
+}
+
+.nnq-icon-amplifier:before{
+	content: '\E026';
+}
+
+.nnq-icon-reducer:before{
+	content: '\E027';
+}
+
+.nnq-icon-leftleft:before{
+	content: '\E028';
+}
+
+.nnq-icon-rightright:before{
+	content: '\E029';
+}
+
+.nnq-icon-pause:before{
+	content: '\E02A';
+}
+
+.nnq-icon-close:before{
+	content: '\E02B';
+}
+
+.nnq-icon-move:before{
+	content: '\E02C';
+}
+
+.nnq-icon-selected:before{
+	content: '\E02D';
+}
+
+.nnq-icon-sortup:before{
+	content: '\E02E';
+}
+
+.nnq-icon-sortdown:before{
+	content: '\E02F';
+}
+
+.nnq-icon-sort:before{
+	content: '\E030';
+}
+
+.nnq-icon-picfilling:before{
+	content: '\E031';
+}
+
+.nnq-icon-delete:before{
+	content: '\E032';
+}
+
+.nnq-icon-edit:before{
+	content: '\E033';
+}
+
+.nnq-icon-scanner:before{
+	content: '\E034';
+}
+
+.nnq-icon-local:before{
+	content: '\E035';
+}
+
+.nnq-icon-copy:before{
+	content: '\E036';
+}
+
+.nnq-icon-error:before{
+	content: '\E039';
+}
+
+.nnq-icon-success:before{
+	content: '\E03A';
+}
+
+.nnq-icon-warnning:before{
+	content: '\E03B';
+}
+
+.nnq-icon-info:before{
+	content: '\E03C';
+}
+
+.nnq-icon-warn:before{
+	content: '\E03D';
 }
