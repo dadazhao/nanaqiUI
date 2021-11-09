@@ -161,11 +161,11 @@
 	content: '\E027';
 }
 
-.nnq-icon-leftleft:before{
+.nnq-icon-left-left:before{
 	content: '\E028';
 }
 
-.nnq-icon-rightright:before{
+.nnq-icon-right-right:before{
 	content: '\E029';
 }
 
@@ -239,4 +239,108 @@
 
 .nnq-icon-warn:before{
 	content: '\E03D';
+}
+
+.nnq-icon-bad:before{
+	content: '\E03E';
+}
+
+.nnq-icon-good:before{
+	content: '\E03F';
+}
+
+.nnq-icon-skip:before{
+	content: '\E040';
+}
+
+.nnq-icon-share:before{
+	content: '\E041';
+}
+
+.nnq-icon-header:before{
+	content: '\E042';
+}
+
+.nnq-icon-typesize:before{
+	content: '\E043';
+}
+
+.nnq-icon-font:before{
+	content: '\E044';
+}
+
+.nnq-icon-delete-line:before{
+	content: '\E047';
+}
+
+.nnq-icon-atcenter:before{
+	content: '\E048';
+}
+
+.nnq-icon-retract:before{
+	content: '\E049';
+}
+
+.nnq-icon-line-height:before{
+	content: '\E04A';
+}
+
+.nnq-icon-pen:before{
+	content: '\E04B';
+}
+
+.nnq-icon-list-ul:before{
+	content: '\E04C';
+}
+
+.nnq-icon-list-ol:before{
+	content: '\E04D';
+}
+
+.nnq-icon-double-quotation:before{
+	content: '\E04E';
+}
+
+.nnq-icon-quotation:before{
+	content: '\E04F';
+}
+
+.nnq-icon-expression:before{
+	content: '\E050';
+}
+
+.nnq-icon-picture:before{
+	content: '\E051';
+}
+
+.nnq-icon-table:before{
+	content: '\E052';
+}
+
+.nnq-icon-video:before{
+	content: '\E053';
+}
+
+.nnq-icon-code:before{
+	content: '\E054';
+}
+
+.nnq-icon-line:before{
+	content: '\E055';
+}
+
+.nnq-icon-screen-full:before{
+	content: '\E056';
+}
+
+.nnq-icon-screen-exit:before{
+	content: '\E057';
+}
+
+.nnq-icon-background:before{
+	content: '\E058';
+}
+
+.nnq-icon-message:before{
+	content: '\E059';
 }
