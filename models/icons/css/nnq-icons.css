@@ -12,6 +12,10 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+.nnq-icon-space:before{
+	content: '\E000';
+}
+
 .nnq-icon-up-arrows:before{
 	content: '\E001';
 }

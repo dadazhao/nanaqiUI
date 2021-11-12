@@ -1,5 +1,5 @@
-/* nnq-tbl css */
-.nnq-tbl{
+/* nnq-table css */
+.nnq-table{
     width: 100%;
 	max-width: 100%;
 	border-spacing: 0px;
@@ -11,47 +11,47 @@
 }
 
 /* table header css */
-.nnq-tbl .nnq-tbl-header{
+.nnq-table .nnq-table-header{
     color: #909399;
     font-weight: bolder;
     background-color: #f5f7fa;
 }
 
 /* table body css */
-.nnq-tbl-body{
+.nnq-table-body{
 
 }
 
-.nnq-tbl td,
-.nnq-tbl th{
+.nnq-table td,
+.nnq-table th{
     border-bottom: 1px solid #ebeef5;
     padding:12px 0px;
 }
 
 /* table checkbox css */
-.nnq-tbl-checkbox{
+.nnq-table-checkbox{
     width: 6%;
 }
 
 /* table cell css */
-.nnq-tbl .nnq-cell{
+.nnq-table .nnq-cell{
     padding: 0px 10px;
     overflow: hidden;
     text-align: left;
 }
 
 /* table border css */
-.nnq-tbl--border th,
-.nnq-tbl--border td{
+.nnq-table--border th,
+.nnq-table--border td{
     border: 1px solid #ebeef5;
 }
 
 /* table event css */
-.nnq-tbl--hover tr:hover{
+.nnq-table--hover tr:hover{
     background-color: #f5f7fa;
 }
 
 /* TABLE TR CSS */
-.nnq-tbl--color tr:nth-child(even) {
+.nnq-table--color tr:nth-child(even) {
 	background-color: #fcf7f7;
 }
