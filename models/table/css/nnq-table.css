@@ -40,6 +40,18 @@
     text-align: left;
 }
 
+.nnq-table-body [class*="nnq-icon-"], [class^="nnq-icon-"] {
+	padding:3px;
+	cursor: pointer;
+	padding-right:10px;
+	font-weight: bolder;
+}
+
+.nnq-table-content-indent{
+	display: inline-block;
+	width: 25px;
+}
+
 /* table border css */
 .nnq-table--border th,
 .nnq-table--border td{

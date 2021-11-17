@@ -1,6 +1,6 @@
 window.onload=function(){
-	var branchClassName = "nnq-tree__branch";
-	var hideClassName = "nnq-hide";
+	var treeBranchClassName = "nnq-tree__branch";
+	var treeHideClassName = "nnq-hide";
 	
 	var outlineTreeOpenClassName = "nnq-icon-minus-circle";
 	var outlineTreeCloseClassName = "nnq-icon-plus-circle";
@@ -8,13 +8,13 @@ window.onload=function(){
 	var defaultTreeOpenClassName = "nnq-icon-down-triangle";
 	var defaultTreeCloseClassName = "nnq-icon-right-triangle";
 	
-	var treeBranchs = document.getElementsByClassName(branchClassName);
+	var treeBranchs = document.getElementsByClassName(treeBranchClassName);
 	for(var i=0;i<treeBranchs.length;i++){
 		treeBranchs[i].onclick=function(){
 			if(this.className.indexOf(outlineTreeOpenClassName)!=-1){
 				this.className = this.className.replace(outlineTreeOpenClassName,outlineTreeCloseClassName)
 				if(this.parentNode.nextElementSibling){
-					this.parentNode.nextElementSibling.className = hideClassName;
+					this.parentNode.nextElementSibling.className = treeHideClassName;
 				}
 				return;
 			}
@@ -29,7 +29,7 @@ window.onload=function(){
 			if(this.className.indexOf(defaultTreeOpenClassName)!=-1){
 				this.className = this.className.replace(defaultTreeOpenClassName,defaultTreeCloseClassName)
 				if(this.parentNode.nextElementSibling){
-					this.parentNode.nextElementSibling.className = hideClassName;
+					this.parentNode.nextElementSibling.className = treeHideClassName;
 				}
 				return;
 			}
