@@ -172,31 +172,44 @@
 </body>
 <script>
 	window.onload=function(){
-		var toggleEles = document.getElementsByClassName("nnq-toggle");
+		var toggleClassName = "nnq-toggle";
+		var layoutLeftCloseClassName = "nnq-layout__left-close";
+		var layoutLeftOpenClassName = "nnq-layout__left-open";
+		
+		var layoutRightCloseClassName = "nnq-layout__right-close";
+		var layoutRightOpenClassName = "nnq-layout__right-open";
+		
+		var toggleEles = document.getElementsByClassName(toggleClassName);
 		for (var i = 0; i < toggleEles.length; i++) {
 			toggleEles[i].onclick = function () {
 				//left hidden/visibly
 				var leftLayoutEles = document.getElementsByClassName("nnq-layout__left");
 				//right hidden/visibly
 				var rightLayoutEles = document.getElementsByClassName("nnq-layout__right");
-				if (leftLayoutEles) {
-					for (var i = 0; i < leftLayoutEles.length; i++) {
-						if (leftLayoutEles[i].className == "nnq-layout__left nnq-layout__left-close") {
-							leftLayoutEles[i].className = "nnq-layout__left nnq-layout__left-open";
+				for (var i = 0; i < leftLayoutEles.length; i++) {
+					if (leftLayoutEles[i].className){
+						if(leftLayoutEles[i].className.indexOf(layoutLeftCloseClassName)!=-1){
+							leftLayoutEles[i].className = leftLayoutEles[i].className.replace(layoutLeftCloseClassName,layoutLeftOpenClassName);
 							for (var i = 0; i < rightLayoutEles.length; i++) {
-								rightLayoutEles[i].className = "nnq-layout__right nnq-layout__right-close"
+								if(rightLayoutEles[i].className){
+									rightLayoutEles[i].className = rightLayoutEles[i].className.replace(layoutRightOpenClassName,layoutRightCloseClassName)
+								}
 							}
-						} else {
-							leftLayoutEles[i].className = "nnq-layout__left nnq-layout__left-close"
+							continue;
+						}
+						if(leftLayoutEles[i].className.indexOf(layoutLeftOpenClassName)!=-1){
+							leftLayoutEles[i].className = leftLayoutEles[i].className.replace(layoutLeftOpenClassName,layoutLeftCloseClassName);
 							for (var i = 0; i < rightLayoutEles.length; i++) {
-								rightLayoutEles[i].className = "nnq-layout__right nnq-layout__right-open"
+								if(rightLayoutEles[i].className){
+									rightLayoutEles[i].className = rightLayoutEles[i].className.replace(layoutRightCloseClassName,layoutRightOpenClassName)
+								}
 							}
+							continue;
 						}
 					}
-
 				}
+				
 			}
-
 		}
 	}
 </script>
