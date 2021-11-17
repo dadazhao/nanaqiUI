@@ -20,9 +20,9 @@
 			margin: 0px;
 		}
 
-		.nnq-layout-left {}
+		.nnq-layout__left {}
 
-		.nnq-layout-left-open {
+		.nnq-layout__left-open {
 			position: absolute;
 			top: 0px;
 			left: 0px;
@@ -32,7 +32,7 @@
 			/* background-color: #0993FC; */
 		}
 
-		.nnq-layout-left-close {
+		.nnq-layout__left-close {
 			position: absolute;
 			top: 0px;
 			left: 0px;
@@ -43,9 +43,9 @@
 			/* background-color: #0993FC; */
 		}
 
-		.nnq-layout-right {}
+		.nnq-layout__right {}
 
-		.nnq-layout-right-close {
+		.nnq-layout__right-close {
 			position: absolute;
 			top: 0px;
 			left: 20%;
@@ -56,7 +56,7 @@
 			/* background-color: gray; */
 		}
 
-		.nnq-layout-right-open {
+		.nnq-layout__right-open {
 			position: absolute;
 			top: 0px;
 			left: 0px;
@@ -130,7 +130,7 @@
 
 <body>
 	<div class="nnq-layout-main">
-		<div class="nnq-layout-left  nnq-layout-left-open">
+		<div class="nnq-layout__left  nnq-layout__left-open">
 			<div class="nnq-logo">
 				NANAQI-UI
 			</div>
@@ -158,7 +158,7 @@
 				</ul>
 			</div>
 		</div>
-		<div class="nnq-layout-right nnq-layout-right-close">
+		<div class="nnq-layout__right nnq-layout__right-close">
 			<div class="nnq-toggle">
 				<label>
 					<div class="nnq-toggle-first"></div>
@@ -171,32 +171,33 @@
 	</div>
 </body>
 <script>
-
-	var toggleEles = document.getElementsByClassName("nnq-toggle");
-	for (var i = 0; i < toggleEles.length; i++) {
-		toggleEles[i].onclick = function () {
-			//left hidden/visibly
-			var leftLayoutEles = document.getElementsByClassName("nnq-layout-left");
-			//right hidden/visibly
-			var rightLayoutEles = document.getElementsByClassName("nnq-layout-right");
-			if (leftLayoutEles) {
-				for (var i = 0; i < leftLayoutEles.length; i++) {
-					if (leftLayoutEles[i].className == "nnq-layout-left nnq-layout-left-close") {
-						leftLayoutEles[i].className = "nnq-layout-left nnq-layout-left-open";
-						for (var i = 0; i < rightLayoutEles.length; i++) {
-							rightLayoutEles[i].className = "nnq-layout-right nnq-layout-right-close"
-						}
-					} else {
-						leftLayoutEles[i].className = "nnq-layout-left nnq-layout-left-close"
-						for (var i = 0; i < rightLayoutEles.length; i++) {
-							rightLayoutEles[i].className = "nnq-layout-right nnq-layout-right-open"
+	window.onload=function(){
+		var toggleEles = document.getElementsByClassName("nnq-toggle");
+		for (var i = 0; i < toggleEles.length; i++) {
+			toggleEles[i].onclick = function () {
+				//left hidden/visibly
+				var leftLayoutEles = document.getElementsByClassName("nnq-layout__left");
+				//right hidden/visibly
+				var rightLayoutEles = document.getElementsByClassName("nnq-layout__right");
+				if (leftLayoutEles) {
+					for (var i = 0; i < leftLayoutEles.length; i++) {
+						if (leftLayoutEles[i].className == "nnq-layout__left nnq-layout__left-close") {
+							leftLayoutEles[i].className = "nnq-layout__left nnq-layout__left-open";
+							for (var i = 0; i < rightLayoutEles.length; i++) {
+								rightLayoutEles[i].className = "nnq-layout__right nnq-layout__right-close"
+							}
+						} else {
+							leftLayoutEles[i].className = "nnq-layout__left nnq-layout__left-close"
+							for (var i = 0; i < rightLayoutEles.length; i++) {
+								rightLayoutEles[i].className = "nnq-layout__right nnq-layout__right-open"
+							}
 						}
 					}
+
 				}
-
 			}
-		}
 
+		}
 	}
 </script>
 

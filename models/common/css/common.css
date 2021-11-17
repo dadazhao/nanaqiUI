@@ -33,6 +33,9 @@
 
 html,
 body {
+	font-family: 'Avenir', Helvetica, Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 	width: 100%;
 	height: 100%;
 	margin: 0px;
@@ -78,6 +81,17 @@ body {
 	display: none;
 }
 
+.nnq-text-align-center{
+	text-align: center;
+}
+
+.nnq-text-align-left{
+	text-align: left;
+}
+
+.nnq-text-align-right{
+	text-align: right;
+}
 
 /*----------------------------------------------- layout css ------------------------------------------------------*/
 .nnq-container {

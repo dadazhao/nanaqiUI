@@ -103,11 +103,11 @@
 	margin: 0px;
 }
 
-.nnq-tree-node__expand-icon{
-	padding: 6px;
-}
-
 .nnq-tree .nnq-icon-right-triangle,
 .nnq-tree .nnq-icon-down-triangle{
 	cursor: pointer;
+}
+
+.nnq-tree__branch,.nnq-tree__leaf{
+	padding: 6px;
 }
