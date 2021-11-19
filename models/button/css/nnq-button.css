@@ -26,6 +26,10 @@
 	border-color: #DDDDDD;
 }
 
+.nnq-button:visited{
+	
+}
+
 .nnq-button:active {
 	opacity: 0.9;
 }
