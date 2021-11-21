@@ -1,6 +1,6 @@
 [class*="nnq-icon-"], [class^="nnq-icon-"] {
     font-family: nanaqi-icons!important;
-    speak: none;
+    /* speak: none; */
     font-style: normal;
     font-weight: 400;
     font-variant: normal;
@@ -347,4 +347,156 @@
 
 .nnq-icon-message:before{
 	content: '\E059';
+}
+
+.nnq-icon-folder:before{
+	content: '\E05A';
+}
+
+.nnq-icon-folder-open:before{
+	content: '\E05B';
+}
+
+.nnq-icon-file:before{
+	content: '\E05C';
+}
+
+.nnq-icon-files:before{
+	content: '\E05D';
+}
+
+.nnq-icon-full-screen:before{
+	content: '\E05E';
+}
+
+.nnq-icon-quit-screen:before{
+	content: '\E05F';
+}
+
+.nnq-icon-type-pdf:before{
+	content: '\E060';
+}
+
+.nnq-icon-type-doc:before{
+	content: '\E061';
+}
+
+.nnq-icon-type-txt:before{
+	content: '\E062';
+}
+
+.nnq-icon-type-xls:before{
+	content: '\E063';
+}
+
+.nnq-icon-type-sh:before{
+	content: '\E064';
+}
+
+.nnq-icon-type-exe:before{
+	content: '\E065';
+}
+
+.nnq-icon-type-unknown:before{
+	content: '\E066';
+}
+
+.nnq-icon-cancel-retract:before{
+	content: '\E067';
+}
+
+.nnq-icon-add-folder:before{
+	content: '\E068';
+}
+
+.nnq-icon-add-file:before{
+	content: '\E069';
+}
+
+.nnq-icon-upload1:before{
+	content: '\E06A';
+}
+
+.nnq-icon-download1:before{
+	content: '\E06B';
+}
+
+.nnq-icon-line-width:before{
+	content: '\E06C';
+}
+
+.nnq-icon-text-size:before{
+	content: '\E06D';
+}
+
+.nnq-icon-user-add:before{
+	content: '\E06E';
+}
+
+.nnq-icon-user-del:before{
+	content: '\E06F';
+}
+
+.nnq-icon-user-group-add:before{
+	content: '\E070';
+}
+
+.nnq-icon-text-grid:before{
+	content: '\E071';
+}
+
+.nnq-icon-drag:before{
+	content: '\E072';
+}
+
+.nnq-icon-microphone:before{
+	content: '\E073';
+}
+
+.nnq-icon-forbid-left:before{
+	content: '\E074';
+}
+
+.nnq-icon-forbid-microphone:before{
+	content: '\E075';
+}
+
+.nnq-icon-speaker:before{
+	content: '\E076';
+}
+
+.nnq-icon-forbid-speaker:before{
+	content: '\E077';
+}
+
+.nnq-icon-to-bottom:before{
+	content: '\E078';
+}
+
+.nnq-icon-to-top:before{
+	content: '\E079';
+}
+
+.nnq-icon-logout:before{
+	content: '\E07A';
+}
+
+.nnq-icon-logout1:before{
+	content: '\E07B';
+}
+
+.nnq-icon-forbid-right:before{
+	content: '\E07C';
+}
+
+.nnq-icon-type-jpg:before{
+	content: '\E07D';
+}
+
+.nnq-icon-type-gif:before{
+	content: '\E07E';
+}
+
+.nnq-icon-type-compress:before{
+	content: '\E07F';
 }
