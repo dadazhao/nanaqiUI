@@ -12,12 +12,12 @@
 	box-sizing: border-box;
 	height: 30px;
 	line-height: 28px;
-	min-width: 45px;
-	text-align: center;
+	/* min-width: 45px; */
+	text-align: left;
 	color: #888;
 	border: 1px solid #ddd;
 	/* border-radius: 5px; */
-	padding:0px 3px;
+	padding:0px 5px;
 }
 .nnq-outline-tree ul{
 	position: relative;
