@@ -1,0 +1,39 @@
+.nnq-image{
+	width: 50px;
+	height: 50px;
+	background-color: #c0c4cc;
+	border: 0;
+}
+
+/*border round css */
+.nnq-image--round{
+	border-radius: 5px;
+}
+
+.nnq-image--round-full {
+	border-radius: 20px;
+}
+
+.nnq-image--circle {
+	border-radius: 50%;
+}
+
+.nnq-image--fill{
+	object-fit: fill;
+}
+
+.nnq-image--contain{
+	object-fit: contain;
+}
+
+.nnq-image--cover{
+	object-fit: cover;
+}
+
+.nnq-image--none{
+	object-fit: none;
+}
+
+.nnq-image--scale-down{
+	object-fit: scale-down;
+}
