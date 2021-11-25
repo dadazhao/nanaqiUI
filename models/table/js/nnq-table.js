@@ -1,5 +1,6 @@
 window.onload=function(){
 	var tableBranchClassName = "nnq-table__branch"
+	var tableHideClassName = "nnq-hide";
 	
 	var tableOpenClassName = "nnq-icon-down-arrows";
 	var tableCloseClassName = "nnq-icon-right-arrows";
@@ -22,7 +23,7 @@ window.onload=function(){
 							trIcons[j].className = trIcons[j].className.replace(tableOpenClassName,tableCloseClassName);
 						}
 					}
-					trNodes[i].className="nnq-hide";
+					trNodes[i].className=tableHideClassName;
 					closeChildenElement(trNodes,id);
 				}
 			}
