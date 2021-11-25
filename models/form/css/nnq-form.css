@@ -49,42 +49,42 @@
 
 .nnq-form-chk--primary i::before{
 	color: white;
-	border: 0px;
+	border:#0993fc solid 1px;
 	background-color: #0993fc;
 	background-color: var(--nnq-primary-color);
 }
 
 .nnq-form-chk--secondary i::before{
 	color: white;
-	border: 0px;
+	border:#babbbc solid 1px;
 	background-color: #babbbc;
 	background-color: var(--nnq-secondary-color);
 }
 
 .nnq-form-chk--success i::before{
 	color: white;
-	border: 0px;
+	border:#37dd28 solid 1px;
 	background-color: #37dd28;
 	background-color: var(--nnq-success-color);
 }
 
 .nnq-form-chk--danger i::before{
 	color: white;
-	border: 0px;
+	border:#e9433d solid 1px;
 	background-color: #e9433d;
 	background-color: var(--nnq-danger-color);
 }
 
 .nnq-form-chk--warning i::before{
 	color: white;
-	border: 0px;
+	border:#fdaf1d solid 1px;
 	background-color: #fdaf1d;
 	background-color: var(--nnq-warning-color);
 }
 
 .nnq-form-chk--info i::before{
 	color: white;
-	border: 0px;
+	border:#0dcaf1 solid 1px;
 	background-color: #0dcaf1;
 	background-color: var(--nnq-info-color);
 }
@@ -95,6 +95,8 @@
 }
 
 .nnq-form-rd i{
+	line-height: 1;
+	vertical-align: middle;
 	font-style: normal;
 	display: inline-block;
 }
@@ -122,42 +124,42 @@
 
 .nnq-form-rd--primary i::before{
 	color: white;
-	border: 0px;
+	border: #0993fc solid 1.5px;
 	background-color: #0993fc;
 	background-color: var(--nnq-primary-color);
 }
 
 .nnq-form-rd--secondary i::before{
 	color: white;
-	border: 0px;
+	border: #babbbc solid 1.5px;
 	background-color: #babbbc;
 	background-color: var(--nnq-secondary-color);
 }
 
 .nnq-form-rd--success i::before{
 	color: white;
-	border: 0px;
+	border: #37dd28 solid 1.5px;
 	background-color: #37dd28;
 	background-color: var(--nnq-success-color);
 }
 
 .nnq-form-rd--danger i::before{
 	color: white;
-	border: 0px;
+	border: #e9433d solid 1.5px;
 	background-color: #e9433d;
 	background-color: var(--nnq-danger-color);
 }
 
 .nnq-form-rd--warning i::before{
 	color: white;
-	border: 0px;
+	border: #fdaf1d solid 1.5px;
 	background-color: #fdaf1d;
 	background-color: var(--nnq-warning-color);
 }
 
 .nnq-form-rd--info i::before{
 	color: white;
-	border: 0px;
+	border: #0dcaf1 solid 1.5px;
 	background-color: #0dcaf1;
 	background-color: var(--nnq-info-color);
 }
