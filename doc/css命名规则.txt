@@ -1,0 +1,7 @@
+nnq-xxx-...通用样式类
+nnq--xxx 	通用样式功能类(快捷样式)
+nnq__xxxx 通用特殊功能类(js操作)
+
+nnq-compontentName-xxx-...组件样式类
+nnq-compontentName--xxxx 组件样式功能类(快捷样式)
+nnq-compontentName__xxxx 组件特殊功能类(js操作)

@@ -1,0 +1,354 @@
+/*nnq-btn base css */
+.nnq-btn {
+	color: #606266;
+	display: inline-block;
+	margin-bottom: 0;
+	font-weight: 500;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+	cursor: pointer;
+	background-image: none;
+	padding: 12px 20px;
+	font-size: 14px;
+	line-height: 1;
+	border: 1px solid #dcdfe6;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	text-decoration: none;
+}
+
+.nnq-btn:hover,
+.nnq-btn:focus {
+	/* color: white; */
+	color: #409eff;
+	border-color: #c6e2ff;
+}
+
+.nnq-btn:visited {}
+
+.nnq-btn:active {
+	opacity: 0.9;
+}
+
+.nnq-btn--default {
+	color: #606266;
+	border-color: #dcdfe6;
+	background-color: white;
+}
+
+.nnq-btn--default:hover,
+.nnq-btn--default:focus {
+	opacity: 0.65;
+	color: black;
+	background-color: #d6dae3;
+}
+
+.nnq-btn--default:disabled,
+.nnq-btn--default.disable {
+	opacity: .65;
+	cursor: not-allowed;
+}
+
+.nnq-btn--primary {
+	color: white;
+	background-color: #0993fc;
+	color: white;
+	background-color: var(--nnq-primary-color);
+}
+
+.nnq-btn--primary:hover,
+.nnq-btn--primary:focus {
+	opacity: 0.65;
+	color: white;
+	color: white;
+}
+
+.nnq-btn--primary:disabled,
+.nnq-btn--primary.disable {
+	opacity: .65;
+	cursor: not-allowed;
+}
+
+.nnq-btn--secondary {
+	color: white;
+	background-color: #babbbc;
+	color: white;
+	background-color: var(--nnq-secondary-color);
+}
+
+.nnq-btn--secondary:hover,
+.nnq-btn--secondary:focus {
+	opacity: .65;
+	color: white;
+	color: white;
+}
+
+.nnq-btn--secondary:disabled,
+.nnq-btn--secondary.disable {
+	opacity: .65;
+	cursor: not-allowed;
+}
+
+.nnq-btn--success {
+	color: white;
+	background-color: #37dd28;
+	color: white;
+	background-color: var(--nnq-success-color);
+}
+
+.nnq-btn--success:hover,
+.nnq-btn--success:focus {
+	opacity: .65;
+	color: white;
+	color: white;
+}
+
+.nnq-btn--success:disabled,
+.nnq-btn--success.disable {
+	opacity: .65;
+	cursor: not-allowed;
+}
+
+.nnq-btn--danger {
+	color: white;
+	background-color: #e9433d;
+	color: white;
+	background-color: var(--nnq-danger-color);
+}
+
+.nnq-btn--danger:hover,
+.nnq-btn--danger:focus {
+	opacity: .65;
+	color: white;
+	color: white;
+}
+
+.nnq-btn--danger:disabled,
+.nnq-btn--danger.disable {
+	opacity: .65;
+	cursor: not-allowed;
+}
+
+.nnq-btn--warning {
+	color: white;
+	background-color: #fdaf1d;
+	color: white;
+	background-color: var(--nnq-warning-color);
+}
+
+.nnq-btn--warning:hover,
+.nnq-btn--warning:focus {
+	opacity: .65;
+	color: white;
+	color: white;
+}
+
+.nnq-btn--warning:disabled,
+.nnq-btn--warning.disable {
+	opacity: .65;
+	cursor: not-allowed;
+}
+
+.nnq-btn--info {
+	color: white;
+	background-color: #0dcaf1;
+	color: white;
+	background-color: var(--nnq-info-color);
+}
+
+.nnq-btn--info:hover,
+.nnq-btn--info:focus {
+	opacity: .65;
+	color: white;
+	color: white;
+}
+
+.nnq-btn--info:disabled,
+.nnq-btn--info.disable {
+	opacity: .65;
+	cursor: not-allowed;
+}
+
+/* nnq-btn-outline css */
+
+/* outline button */
+.nnq-btn--outline-default {
+	color: #606266;
+	border-color: #dcdfe6;
+}
+
+.nnq-btn--outline-default:hover,
+.nnq-btn--outline-default:focus {
+	color: white;
+	background-color: #dcdfe6;
+}
+
+.nnq-btn--outline-default:disabled,
+.nnq-btn--outline-default.disable {
+	opacity: .65;
+	cursor: not-allowed;
+}
+
+.nnq-btn--outline-primary {
+	color: #0993fc;
+	border-color: #0993fc;
+	color: var(--nnq-primary-color);
+	border-color: var(--nnq-primary-color);
+}
+
+.nnq-btn--outline-primary:hover,
+.nnq-btn--outline-primary:focus {
+	color: white;
+	background-color: #0993fc;
+	color: white;
+	background-color: var(--nnq-primary-color);
+}
+
+.nnq-btn--outline-primary:disabled,
+.nnq-btn--outline-primary.disable {
+	opacity: .65;
+	cursor: not-allowed;
+}
+
+.nnq-btn--outline-secondary {
+	color: #babbbc;
+	border-color: #babbbc;
+	color: var(--nnq-secondary-color);
+	border-color: var(--nnq-secondary-color);
+}
+
+.nnq-btn--outline-secondary:hover,
+.nnq-btn--outline-secondary:focus {
+	color: white;
+	background-color: #babbbc;
+	color: white;
+	background-color: var(--nnq-secondary-color);
+}
+
+.nnq-btn--outline-secondary:disabled,
+.nnq-btn--outline-secondary.disable {
+	opacity: .65;
+	cursor: not-allowed;
+}
+
+.nnq-btn--outline-success {
+	color: #37dd28;
+	border-color: #37dd28;
+	color: var(--nnq-success-color);
+	border-color: var(--nnq-success-color);
+}
+
+.nnq-btn--outline-success:hover,
+.nnq-btn--outline-success:focus {
+	color: white;
+	background-color: #37dd28;
+	color: white;
+	background-color: var(--nnq-success-color);
+}
+
+.nnq-btn--outline-success:disabled,
+.nnq-btn--outline-success.disable {
+	opacity: .65;
+	cursor: not-allowed;
+}
+
+.nnq-btn--outline-danger {
+	color: #e9433d;
+	border-color: #e9433d;
+	color: var(--nnq-danger-color);
+	border-color: var(--nnq-danger-color);
+}
+
+.nnq-btn--outline-danger:hover,
+.nnq-btn--outline-danger:focus {
+	color: white;
+	background-color: #e9433d;
+	color: white;
+	background-color: var(--nnq-danger-color);
+}
+
+.nnq-btn--outline-danger:disabled,
+.nnq-btn--outline-danger.disable {
+	opacity: .65;
+	cursor: not-allowed;
+}
+
+.nnq-btn--outline-warning {
+	color: #fdaf1d;
+	border-color: #fdaf1d;
+	color: var(--nnq-warning-color);
+	border-color: var(--nnq-warning-color);
+}
+
+.nnq-btn--outline-warning:hover,
+.nnq-btn--outline-warning:focus {
+	color: white;
+	background-color: #fdaf1d;
+	color: white;
+	background-color: var(--nnq-warning-color);
+}
+
+.nnq-btn--outline-warning:disabled,
+.nnq-btn--outline-warning.disable {
+	opacity: .65;
+	cursor: not-allowed;
+}
+
+.nnq-btn--outline-info {
+	color: #0dcaf1;
+	border-color: #0dcaf1;
+	color: var(--nnq-info-color);
+	border-color: var(--nnq-info-color);
+}
+
+.nnq-btn--outline-info:hover,
+.nnq-btn--outline-info:focus {
+	color: white;
+	background-color: #0dcaf1;
+	color: white;
+	background-color: var(--nnq-info-color);
+}
+
+.nnq-btn--outline-info:disabled,
+.nnq-btn--outline-info.disable {
+	opacity: .65;
+	cursor: not-allowed;
+}
+
+/* round css */
+.nnq-btn--round-full {
+	border-radius: 40px;
+}
+
+/* round css */
+.nnq-btn--round {
+	border-radius: 4px;
+}
+
+.nnq-btn--circle {
+	border-radius: 50%;
+}
+
+/* button size */
+.nnq-btn--md {
+	padding: 10px 20px;
+}
+
+.nnq-btn--sm {
+	padding: 9px 15px;
+}
+
+.nnq-btn--mn {
+	padding: 7px 15px;
+}
+
+/* tool css */
+.disabled {
+	opacity: .65;
+	pointer-events: none;
+}

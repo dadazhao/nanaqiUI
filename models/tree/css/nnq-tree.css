@@ -7,7 +7,7 @@
 	position: relative;
 	padding: 5px 15px;
 }
-.nnq-outline-tree span{
+.nnq-outline-tree .nnq-outline-tree__inner{
 	display: inline-block;
 	box-sizing: border-box;
 	height: 30px;
@@ -62,14 +62,14 @@
 	border-left: 1px dotted #ddd;
 }
 
-.nnq-outline-tree--hover span:hover, .nnq-outline-tree--hover span:hover+ul span{
+.nnq-outline-tree--hover .nnq-outline-tree__inner:hover, .nnq-outline-tree--hover .nnq-outline-tree__inner:hover+ul .nnq-outline-tree__inner{
 	color: #fff;
 	background-color: orange;
 }
-.nnq-outline-tree--hover span:hover,
-.nnq-outline-tree--hover span:hover+ul span,
-.nnq-outline-tree--hover span:hover+ul li:before,
-.nnq-outline-tree--hover span:hover+ul li:after{
+.nnq-outline-tree--hover .nnq-outline-tree__inner:hover,
+.nnq-outline-tree--hover .nnq-outline-tree__inner:hover+ul .nnq-outline-tree__inner,
+.nnq-outline-tree--hover .nnq-outline-tree__inner:hover+ul li:before,
+.nnq-outline-tree--hover .nnq-outline-tree__inner:hover+ul li:after{
 	border-color: orange;
 }
 
