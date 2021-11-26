@@ -111,3 +111,8 @@
 .nnq-tree__branch,.nnq-tree__leaf{
 	padding: 6px;
 }
+
+/* 兼容form checkbox */
+.nnq-tree .nnq-checkbox{
+	margin-bottom: 3px;
+}

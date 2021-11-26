@@ -6,6 +6,7 @@
 	<title>树控件样式</title>
 	<link href="../../common/css/common.css" type="text/css" rel="stylesheet" />
 	<link href="../../icons/css/nnq-icons.css" type="text/css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="../../form/css/nnq-form.css"/>
 	<link href="../css/nnq-tree.css" type="text/css" rel="stylesheet" />
 	<script src="../js/nnq-tree.js" type="text/jscript"></script>
 </head>
@@ -47,28 +48,135 @@
 		<div class="nnq-tree nnq-col-lg-6">
 			<ul>
 				<li>
-					<span><i class="nnq-tree__branch nnq-icon-right-triangle"></i>NUM</span>
+					<span><i class="nnq-tree__branch nnq-icon-right-triangle"></i><span>NUM</span></span>
 				</li>
 				<li>
-					<span><i class="nnq-tree__branch nnq-icon-down-triangle"></i>NUM</span>
+					<span><i class="nnq-tree__branch nnq-icon-down-triangle"></i><span>NUM</span></span>
 					<ul>
 						<li>
-							<span><i class="nnq-tree__branch nnq-icon-down-triangle"></i>一</span>
+							<span><i class="nnq-tree__branch nnq-icon-down-triangle"></i><span>一</span></span>
 							<ul>
 								<li>
-									<span><i class="nnq-tree__leaf nnq-icon-space"></i>一-1</span>
+									<span><i class="nnq-tree__leaf nnq-icon-space"></i><span>一-1</span></span>
 								</li>
 							</ul>
 						</li>
-						<li><span><i class="nnq-tree__branch nnq-icon-right-triangle"></i>二</span></li>
+						<li><span><i class="nnq-tree__branch nnq-icon-right-triangle"></i><span>二</span></span></li>
 						<li>
-							<span><i class="nnq-tree__branch nnq-icon-down-triangle"></i>三</span>
+							<span><i class="nnq-tree__branch nnq-icon-down-triangle"></i><span>三</span></span>
 							<ul>
 								<li>
-									<span><i class="nnq-tree__leaf nnq-icon-space"></i>三-1</span>
+									<span><i class="nnq-tree__leaf nnq-icon-space"></i><span>三-1</span></span>
 								</li>
 								<li>
-									<span><i class="nnq-tree__leaf nnq-icon-space"></i>三-2</span>
+									<span><i class="nnq-tree__leaf nnq-icon-space"></i><span>三-2</span></span>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		
+		<div class="nnq-tree nnq-col-lg-12">
+			<ul>
+				<li>
+					<span>
+						<i class="nnq-tree__branch nnq-icon-right-triangle"></i>
+						<label class="nnq-checkbox">
+							<span class="nnq-checkbox--input">
+								<input type="checkbox" hidden="hidden">
+								<span class="nnq-checkbox--icon"></span>
+							</span>
+						</label>
+						<span>NUM</span>
+					</span>
+				</li>
+				<li>
+					<span>
+						<i class="nnq-tree__branch nnq-icon-down-triangle"></i>
+						<label class="nnq-checkbox">
+							<span class="nnq-checkbox--input">
+								<input type="checkbox" hidden="hidden">
+								<span class="nnq-checkbox--icon"></span>
+							</span>
+						</label>
+						<span>NUM</span>
+					</span>
+					<ul>
+						<li>
+							<span>
+								<i class="nnq-tree__branch nnq-icon-down-triangle"></i>
+								<label class="nnq-checkbox">
+									<span class="nnq-checkbox--input">
+										<input type="checkbox" hidden="hidden">
+										<span class="nnq-checkbox--icon"></span>
+									</span>
+								</label>
+								<span>一</span>
+							</span>
+							<ul>
+								<li>
+									<span>
+										<i class="nnq-tree__leaf nnq-icon-space"></i>
+										<label class="nnq-checkbox">
+											<span class="nnq-checkbox--input">
+												<input type="checkbox" hidden="hidden">
+												<span class="nnq-checkbox--icon"></span>
+											</span>
+										</label>
+										<span>一-1</span>
+									</span>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<span>
+								<i class="nnq-tree__branch nnq-icon-right-triangle"></i>
+								<label class="nnq-checkbox">
+									<span class="nnq-checkbox--input">
+										<input type="checkbox" hidden="hidden">
+										<span class="nnq-checkbox--icon"></span>
+									</span>
+								</label>
+								<span>二</span>
+							</span>
+						</li>
+						<li>
+							<span>
+								<i class="nnq-tree__branch nnq-icon-down-triangle"></i>
+								<label class="nnq-checkbox">
+									<span class="nnq-checkbox--input">
+										<input type="checkbox" hidden="hidden">
+										<span class="nnq-checkbox--icon"></span>
+									</span>
+								</label>
+								<span>三</span>
+							</span>
+							<ul>
+								<li>
+									<span>
+										<i class="nnq-tree__leaf nnq-icon-space"></i>
+										<label class="nnq-checkbox">
+											<span class="nnq-checkbox--input">
+												<input type="checkbox" hidden="hidden">
+												<span class="nnq-checkbox--icon"></span>
+											</span>
+										</label>
+										<span>三-1</span>
+									</span>
+								</li>
+								<li>
+									<span>
+										<i class="nnq-tree__leaf nnq-icon-space"></i>
+										<label class="nnq-checkbox">
+											<span class="nnq-checkbox--input">
+												<input type="checkbox" hidden="hidden">
+												<span class="nnq-checkbox--icon"></span>
+											</span>
+										</label>
+										<span>三-2</span>
+									</span>
 								</li>
 							</ul>
 						</li>
