@@ -1,0 +1,165 @@
+
+.nnq-form-group {
+	margin-bottom: 15px;
+}
+
+.nnq-form-control {
+	width: 100%;
+	display: block;
+	outline: none;
+	padding: 10px 20px;
+	font-size: 1em;
+	font-weight: 500;
+}
+
+.nnq-form-chk input[type="checkbox"]{
+	display: none;
+}
+
+.nnq-form-chk i{
+	font-style: normal;
+	display: inline-block;
+}
+
+.nnq-form-chk i::before{
+	font-size: 18px;
+	border:gray solid 1px;
+	speak: none;
+	font-style: normal;
+	font-weight: bolder;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	vertical-align: middle;
+	display: inline-block;
+	margin-right: 3px;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.nnq-form-chk input[type="checkbox"]+i::before{
+	font-family: nanaqi-icons!important;
+	content: '\E02D';
+}
+
+.nnq-form-chk input[type="checkbox"]:checked+i:before{
+	font-family: nanaqi-icons!important;
+	content: '\E000';
+}
+
+.nnq-form-chk--primary i::before{
+	color: white;
+	border:#0993fc solid 1px;
+	background-color: #0993fc;
+	background-color: var(--nnq-primary-color);
+}
+
+.nnq-form-chk--secondary i::before{
+	color: white;
+	border:#babbbc solid 1px;
+	background-color: #babbbc;
+	background-color: var(--nnq-secondary-color);
+}
+
+.nnq-form-chk--success i::before{
+	color: white;
+	border:#37dd28 solid 1px;
+	background-color: #37dd28;
+	background-color: var(--nnq-success-color);
+}
+
+.nnq-form-chk--danger i::before{
+	color: white;
+	border:#e9433d solid 1px;
+	background-color: #e9433d;
+	background-color: var(--nnq-danger-color);
+}
+
+.nnq-form-chk--warning i::before{
+	color: white;
+	border:#fdaf1d solid 1px;
+	background-color: #fdaf1d;
+	background-color: var(--nnq-warning-color);
+}
+
+.nnq-form-chk--info i::before{
+	color: white;
+	border:#0dcaf1 solid 1px;
+	background-color: #0dcaf1;
+	background-color: var(--nnq-info-color);
+}
+
+
+.nnq-form-rd input[type="radio"]{
+	display: none;
+}
+
+.nnq-form-rd i{
+	line-height: 1;
+	vertical-align: middle;
+	font-style: normal;
+	display: inline-block;
+}
+
+.nnq-form-rd i::before{
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	cursor: pointer;
+	text-align: center;
+	border-radius: 40px;
+	margin-right: 3px;
+}
+
+.nnq-form-rd input[type="radio"]+i::before{
+	border: gray solid 1.5px;
+	font-family: nanaqi-icons!important;
+	content: '\E000';
+}
+
+.nnq-form-rd input[type="radio"]:checked+i:before{
+	background-color: gray;
+	box-shadow: inset 0 0 0 3px #f4f4f4;
+}
+
+.nnq-form-rd--primary i::before{
+	color: white;
+	border: #0993fc solid 1.5px;
+	background-color: #0993fc;
+	background-color: var(--nnq-primary-color);
+}
+
+.nnq-form-rd--secondary i::before{
+	color: white;
+	border: #babbbc solid 1.5px;
+	background-color: #babbbc;
+	background-color: var(--nnq-secondary-color);
+}
+
+.nnq-form-rd--success i::before{
+	color: white;
+	border: #37dd28 solid 1.5px;
+	background-color: #37dd28;
+	background-color: var(--nnq-success-color);
+}
+
+.nnq-form-rd--danger i::before{
+	color: white;
+	border: #e9433d solid 1.5px;
+	background-color: #e9433d;
+	background-color: var(--nnq-danger-color);
+}
+
+.nnq-form-rd--warning i::before{
+	color: white;
+	border: #fdaf1d solid 1.5px;
+	background-color: #fdaf1d;
+	background-color: var(--nnq-warning-color);
+}
+
+.nnq-form-rd--info i::before{
+	color: white;
+	border: #0dcaf1 solid 1.5px;
+	background-color: #0dcaf1;
+	background-color: var(--nnq-info-color);
+}
