@@ -11,9 +11,6 @@
 
 /* common css */
 :root {
-	--nnq-white-color: white;
-	--nnq-black-color: black;
-	--nnq-gray-color: gray;
 	--nnq-primary-color: #0993fc;
 	--nnq-secondary-color: #babbbc;
 	--nnq-success-color: #37dd28;
@@ -40,10 +37,10 @@ body {
 	height: 100%;
 	margin: 0px;
 	padding: 0px;
-	font-family: Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,SimSun,sans-serif;
+/* 	font-family: Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,SimSun,sans-serif;
 	font-weight: 400;
 	-webkit-font-smoothing: antialiased;
-	-webkit-tap-highlight-color: transparent;
+	-webkit-tap-highlight-color: transparent; */
 }
 
 body {
