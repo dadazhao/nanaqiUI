@@ -1,0 +1,61 @@
+.nnq-message{
+	min-width: 380px;
+	box-sizing: border-box;
+	border-radius: 4px;
+	color: #767676;
+	border: 1px solid #D6DAE3;
+	position: fixed;
+	left: 50%;
+	top: 20px;
+	transform: translateX(-50%);
+	background-color: #e2e6ef;
+	transition: opacity .3s,transform .4s,top .4s;
+	overflow: hidden;
+	padding: 15px 15px 15px 20px;
+	display: flex;
+	align-items: center;
+}
+
+.nnq-message .nnq-message-icon{
+	font-size: 2em;
+}
+
+.nnq-message .nnq-message-lable{
+	padding-left: 4px;
+}
+
+.nnq-message--primary{
+	color: #0993FC;
+	border: #d9ecff solid 1px;
+	background-color: #ecf5ff;
+}
+
+.nnq-message--secondary{
+	color: #babbbc;
+	border: #D6DAE3 solid 1px;
+	background-color: #e9e9ea;
+}
+
+.nnq-message--success{
+	color: #37dd28;
+	border: #caddac solid 1px;
+	background-color: #d3ddcb;
+}
+
+.nnq-message--danger{
+	color: #e9433d;
+	border: #e9c1c1 solid 1px;
+	background-color: #e9cecd;
+}
+
+.nnq-message--warning{
+	color: #fdaf1d;
+	border: #fdf1aa solid 1px;
+	background-color: #fdf6c1;
+}
+
+.nnq-message--info{
+	color: #0dcaf1;
+	border: #a8f0f1 solid 1px;
+	background-color: #cff1f0;
+}
