@@ -2,7 +2,7 @@
     font-family: nanaqi-icons;
     /* src: url('../fonts/nnq.eot'); */
     src:
-         url('../fonts/nanaqi-icon.otf') format('truetype'),
+         /* url('../fonts/nanaqi-icon.otf') format('truetype'), */
 		 /* url('../fonts/nnq.eot?#iefix') format('embedded-opentype'), */
          url('../fonts/nanaqi-icons.woff2') format('woff2'),
          url('../fonts/nanaqi-icons.woff') format('woff');
