@@ -64,8 +64,12 @@ window.nnq = nnq;
 	}
 
 	function initalizeElement (nnq) {
+		var date = new Date().getTime();
+		var id = date + Math.random();
 		var alter_ele = [];
-		alter_ele.push(' <div class="nnq-message nnq-message--primary" ');
+		alter_ele.push(' <div id="')
+		alter_ele.push(id);
+		alter_ele.push('" class="nnq-message nnq-alter__message nnq-message--primary" ');
 		var baseTop = nnq.alter.defaults.baseTop;
 		var alterNum = nnq.alter.defaults.alterList.length;
 		if (alterNum >= 1) {
@@ -82,8 +86,8 @@ window.nnq = nnq;
 		alter_ele.push('</div>');
 
 		var alterText = alter_ele.join("");
-		var date = new Date();
-		var element = { "datetime": date.getTime(), "alterText": alterText };
+
+		var element = { "id": "" + id, "datetime": date, "alterText": alterText };
 		nnq.alter.defaults.alterList.push(element);
 		alterElement(element);
 	}
@@ -91,6 +95,33 @@ window.nnq = nnq;
 	function alterElement (element) {
 		var body = document.getElementsByTagName("body")[0];
 		body.innerHTML = body.innerHTML + element.alterText;
+	}
+
+	setInterval(() => {
+		removeElement();
+	}, 1000);
+
+	function removeElement () {
+
+		var alterList = nnq.alter.defaults.alterList;
+
+		for (var i = 0; i < alterList.length; i++) {
+			var date = new Date().getTime();
+			if (alterList[i].datetime < date - nnq.alter.defaults.lifeDate) {
+				if (document.getElementById(alterList[i].id)) {
+					document.getElementById(alterList[i].id).remove()
+				}
+				alterList.splice(i, i + 1);
+				var msgs = document.getElementsByClassName("nnq-alter__message");
+				for (var j = 0; j < msgs.length; j++) {
+					var top = msgs[j].style.top.replace("px", "");
+					msgs[j].style.top = (Number(top) - nnq.alter.defaults.addTop) + "px";
+					console.log(msgs[j].style);
+
+				}
+				break;
+			}
+		}
 	}
 
 	nnq.alter = function (options) {
@@ -105,7 +136,7 @@ window.nnq = nnq;
 		alterList: [],
 		baseTop: 20,
 		addTop: 64,
-		lifeDate: 5000
+		lifeDate: 3000
 	}
 
 })(nnq)
