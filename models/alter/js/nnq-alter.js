@@ -57,13 +57,6 @@ function getCache(obj) {
 nnq.fn.init.prototype = nnq.fn;
 window.nnq = nnq;
 
-
-nnq.data(nnq, "aaa", {"bbb":"bbb"});
-console.log("get==" + nnq.data(nnq, "aaa"));
-
-console.log(nnq);
-
-console.log(nnq("a"));
 (function(nnq) {
 
 	var alterList = [];
