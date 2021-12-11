@@ -3,7 +3,8 @@
 
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+	<meta name="viewport"
+		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
 	<title></title>
 	<style>
 		html,
@@ -155,13 +156,17 @@
 					<li>
 						<a href="./models/tree/html/nnq-tree.html" target="panel">树组件</a>
 					</li>
-					
+
 					<li>
 						<a href="./models/image/html/nnq-image.html" target="panel">图片组件</a>
 					</li>
-					
+
 					<li>
 						<a href="./models/card/html/nnq-card.html" target="panel">Card组件</a>
+					</li>
+
+					<li>
+						<a href="./models/alter/html/nnq-alter.html" target="panel">Alter组件</a>
 					</li>
 				</ul>
 			</div>
@@ -179,14 +184,14 @@
 	</div>
 </body>
 <script>
-	window.onload=function(){
+	window.onload = function () {
 		var toggleClassName = "nnq-toggle";
 		var layoutLeftCloseClassName = "nnq-layout__left-close";
 		var layoutLeftOpenClassName = "nnq-layout__left-open";
-		
+
 		var layoutRightCloseClassName = "nnq-layout__right-close";
 		var layoutRightOpenClassName = "nnq-layout__right-open";
-		
+
 		var toggleEles = document.getElementsByClassName(toggleClassName);
 		for (var i = 0; i < toggleEles.length; i++) {
 			toggleEles[i].onclick = function () {
@@ -195,28 +200,28 @@
 				//right hidden/visibly
 				var rightLayoutEles = document.getElementsByClassName("nnq-layout__right");
 				for (var i = 0; i < leftLayoutEles.length; i++) {
-					if (leftLayoutEles[i].className){
-						if(leftLayoutEles[i].className.indexOf(layoutLeftCloseClassName)!=-1){
-							leftLayoutEles[i].className = leftLayoutEles[i].className.replace(layoutLeftCloseClassName,layoutLeftOpenClassName);
+					if (leftLayoutEles[i].className) {
+						if (leftLayoutEles[i].className.indexOf(layoutLeftCloseClassName) != -1) {
+							leftLayoutEles[i].className = leftLayoutEles[i].className.replace(layoutLeftCloseClassName, layoutLeftOpenClassName);
 							for (var i = 0; i < rightLayoutEles.length; i++) {
-								if(rightLayoutEles[i].className){
-									rightLayoutEles[i].className = rightLayoutEles[i].className.replace(layoutRightOpenClassName,layoutRightCloseClassName)
+								if (rightLayoutEles[i].className) {
+									rightLayoutEles[i].className = rightLayoutEles[i].className.replace(layoutRightOpenClassName, layoutRightCloseClassName)
 								}
 							}
 							continue;
 						}
-						if(leftLayoutEles[i].className.indexOf(layoutLeftOpenClassName)!=-1){
-							leftLayoutEles[i].className = leftLayoutEles[i].className.replace(layoutLeftOpenClassName,layoutLeftCloseClassName);
+						if (leftLayoutEles[i].className.indexOf(layoutLeftOpenClassName) != -1) {
+							leftLayoutEles[i].className = leftLayoutEles[i].className.replace(layoutLeftOpenClassName, layoutLeftCloseClassName);
 							for (var i = 0; i < rightLayoutEles.length; i++) {
-								if(rightLayoutEles[i].className){
-									rightLayoutEles[i].className = rightLayoutEles[i].className.replace(layoutRightCloseClassName,layoutRightOpenClassName)
+								if (rightLayoutEles[i].className) {
+									rightLayoutEles[i].className = rightLayoutEles[i].className.replace(layoutRightCloseClassName, layoutRightOpenClassName)
 								}
 							}
 							continue;
 						}
 					}
 				}
-				
+
 			}
 		}
 	}
