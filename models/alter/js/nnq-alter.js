@@ -1,11 +1,42 @@
 var nnq = function (selector) {
-	return new nnq.fn.init(selector)
+	return new nnq.fn.init(selector);
 }
 
 nnq.fn = nnq.prototype = {
 	init: function (selector) {
 		this[0] = selector;
-		return this
+		this.eles = null;
+		if (typeof selector != 'string')
+			return this;
+		if (0 == selector.indexOf("#")) {
+			this[0] = document.getElementById(selector.slice(1));
+		} else if (0 == selector.indexOf(".")) {
+			this[0] = document.getElementsByClassName(selector.slice(1))[0];
+			this.eles = document.getElementsByClassName(selector.slice(1));
+		} else {
+			this[0] = document.getElementsByTagName(selector)[0];
+			this.eles = document.getElementsByTagName(selector);
+		}
+		return this;
+	}
+}
+
+nnq.prototype.innerHTML = function (html) {
+	if (html == null)
+		return this[0].innerHTML;
+	this[0].innerHTML = html;
+}
+
+nnq.prototype.remove = function () {
+	if (this[0])
+		this[0].remove();
+}
+
+nnq.prototype.each = function (callback, args) {
+	if (callback == null || this.eles == null)
+		return;
+	for (var i = 0; i < this.eles.length; i++) {
+		callback.apply(this.eles[i], args);
 	}
 }
 // object extend method
@@ -93,8 +124,7 @@ window.nnq = nnq;
 	}
 
 	function alterElement (element) {
-		var body = document.getElementsByTagName("body")[0];
-		body.innerHTML = body.innerHTML + element.alterText;
+		nnq("body").innerHTML(nnq("body").innerHTML() + element.alterText);
 	}
 
 	setInterval(() => {
@@ -108,17 +138,13 @@ window.nnq = nnq;
 		for (var i = 0; i < alterList.length; i++) {
 			var date = new Date().getTime();
 			if (alterList[i].datetime < date - nnq.alter.defaults.lifeDate) {
-				if (document.getElementById(alterList[i].id)) {
-					document.getElementById(alterList[i].id).remove()
-				}
+				nnq("#" + alterList[i].id).remove()
 				alterList.splice(i, i + 1);
-				var msgs = document.getElementsByClassName("nnq-alter__message");
-				for (var j = 0; j < msgs.length; j++) {
-					var top = msgs[j].style.top.replace("px", "");
-					msgs[j].style.top = (Number(top) - nnq.alter.defaults.addTop) + "px";
-					console.log(msgs[j].style);
 
-				}
+				nnq(".nnq-alter__message").each(function () {
+					var top = nnq(this)[0].style.top.replace("px", "");
+					nnq(this)[0].style.top = (Number(top) - nnq.alter.defaults.addTop) + "px";
+				});
 				break;
 			}
 		}
@@ -132,7 +158,7 @@ window.nnq = nnq;
 	}
 
 	nnq.alter.defaults = {
-		message: "alter message",
+		message: "Tips Message",
 		alterList: [],
 		baseTop: 20,
 		addTop: 64,
@@ -143,4 +169,6 @@ window.nnq = nnq;
 
 window.onload = function () {
 	nnq.alter("aaaa"); nnq.alter("bbb"); nnq.alter("ccc"); nnq.alter("aaaa"); nnq.alter("bbb"); nnq.alter("ccc");
+
+	// console.log(nnq("#aaa"));
 }
