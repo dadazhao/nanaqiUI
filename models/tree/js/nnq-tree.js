@@ -1,45 +1,45 @@
-window.onload=function(){
+window.onload = function () {
 	var treeBranchClassName = "nnq-tree__branch";
 	var treeHideClassName = "nnq-hide";
-	
+
 	var outlineTreeOpenClassName = "nnq-icon-minus-circle";
 	var outlineTreeCloseClassName = "nnq-icon-plus-circle";
-	
+
 	var defaultTreeOpenClassName = "nnq-icon-down-triangle";
 	var defaultTreeCloseClassName = "nnq-icon-right-triangle";
-	
-	var treeBranchs = document.getElementsByClassName(treeBranchClassName);
-	for(var i=0;i<treeBranchs.length;i++){
-		treeBranchs[i].onclick=function(){
-			if(this.className.indexOf(outlineTreeOpenClassName)!=-1){
-				this.className = this.className.replace(outlineTreeOpenClassName,outlineTreeCloseClassName)
-				if(this.parentNode.nextElementSibling){
-					this.parentNode.nextElementSibling.className = treeHideClassName;
+
+	nnq("." + treeBranchClassName).each(function () {
+		nnq(this).click(function () {
+			if (nnq(this)[0].className.indexOf(outlineTreeOpenClassName) != -1) {
+				nnq(this)[0].className = nnq(this)[0].className.replace(outlineTreeOpenClassName, outlineTreeCloseClassName)
+				if (nnq(this)[0].parentNode.nextElementSibling) {
+					nnq(this)[0].parentNode.nextElementSibling.className = treeHideClassName;
 				}
 				return;
 			}
-			if(this.className.indexOf(outlineTreeCloseClassName)!=-1){
-				this.className = this.className.replace(outlineTreeCloseClassName,outlineTreeOpenClassName)
-				if(this.parentNode.nextElementSibling){
-					this.parentNode.nextElementSibling.className = "";
+			if (nnq(this)[0].className.indexOf(outlineTreeCloseClassName) != -1) {
+				nnq(this)[0].className = nnq(this)[0].className.replace(outlineTreeCloseClassName, outlineTreeOpenClassName)
+				if (nnq(this)[0].parentNode.nextElementSibling) {
+					nnq(this)[0].parentNode.nextElementSibling.className = "";
 				}
 				return;
 			}
-			
-			if(this.className.indexOf(defaultTreeOpenClassName)!=-1){
-				this.className = this.className.replace(defaultTreeOpenClassName,defaultTreeCloseClassName)
-				if(this.parentNode.nextElementSibling){
-					this.parentNode.nextElementSibling.className = treeHideClassName;
+
+			if (nnq(this)[0].className.indexOf(defaultTreeOpenClassName) != -1) {
+				nnq(this)[0].className = nnq(this)[0].className.replace(defaultTreeOpenClassName, defaultTreeCloseClassName)
+				if (nnq(this)[0].parentNode.nextElementSibling) {
+					nnq(this)[0].parentNode.nextElementSibling.className = treeHideClassName;
 				}
 				return;
 			}
-			if(this.className.indexOf(defaultTreeCloseClassName)!=-1){
-				this.className = this.className.replace(defaultTreeCloseClassName,defaultTreeOpenClassName)
-				if(this.parentNode.nextElementSibling){
-					this.parentNode.nextElementSibling.className = "";
+			if (nnq(this)[0].className.indexOf(defaultTreeCloseClassName) != -1) {
+				nnq(this)[0].className = nnq(this)[0].className.replace(defaultTreeCloseClassName, defaultTreeOpenClassName)
+				if (nnq(this)[0].parentNode.nextElementSibling) {
+					nnq(this)[0].parentNode.nextElementSibling.className = "";
 				}
 				return;
 			}
-		}
-	}
+		});
+	});
+
 }
