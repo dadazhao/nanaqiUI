@@ -39,7 +39,7 @@ nnq(function(nnq) {
 
     function alterElement(element) {
         nnq("body").each(function() {
-            nnq(this).innerHTML(nnq(this).innerHTML() + element.alterText);
+            nnq(this).html(nnq(this).html() + element.alterText);
         })
     }
 

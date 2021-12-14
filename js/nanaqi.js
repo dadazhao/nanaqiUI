@@ -25,7 +25,7 @@ nnq.fn = nnq.prototype = {
     }
 }
 
-nnq.prototype.innerHTML = function(html) {
+nnq.prototype.html = function(html) {
 
     if (this[0]) {
         if (this[0] instanceof HTMLCollection) {

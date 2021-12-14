@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="../css/nanaqi.css" type="text/css" rel="stylesheet" />
+    <script src="../js/nanaqi.js"></script>
+    <script src="../js/extends/datagrid.js"></script>
+    <script>
+        window.onload = function() {
+            nnq("#datagrid").datagrid({
+                id: "#datagrid",
+                url: 'datagrid.json',
+                method: 'get',
+                paging: true,
+                isHoverColor: true,
+                isEvenColor: true,
+                showText: ["首页", "上一页", "下一页", "尾页"],
+                columns: [{
+                    field: 'ck',
+                    align: 'center'
+                }, {
+                    field: 'id',
+                    title: '编号',
+                    align: 'center'
+                }, {
+                    field: 'name',
+                    title: '名称',
+                    align: 'center'
+                }, {
+                    field: 'descrtion',
+                    title: '描述',
+                    align: 'center'
+                }, {
+                    field: 'price',
+                    title: '价钱',
+                    align: 'center'
+                }, {
+                    field: 'action',
+                    title: '操作',
+                    template: function(row) {
+                        return "<a class='nnq-btn nnq-btn-outline-primary'>Primary</a> <a class='nnq-btn nnq-btn-outline-warning'>Warning</a>"
+                    }
+                }],
+                data: {
+                    "totle": 100,
+                    "data": [{
+                        "id": 15,
+                        "name": "查找第二第三行，即索引值是1和2，也就是比0大",
+                        "descrtion": "描述查找第二第三行，即索引值是1和2，也就是比0大",
+                        "price": 150
+                    }],
+                }
+
+            });
+        };
+    </script>
+</head>
+
+<body>
+    <div id="datagrid"></div>
+</body>
+
+</html>
