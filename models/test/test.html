@@ -5,13 +5,19 @@
     <meta charset="utf-8">
     <title>树控件样式</title>
     <script src="../../js/nanaqi.js" type="text/jscript"></script>
+    <script src="../../js/nanaqi-ajax.js" type="text/jscript"></script>
 </head>
 
 <body>
 </body>
 <script>
     nnq(function(nnq) {
-        console.log(nnq);
+        nnq.ajax({
+            url: "test.data",
+            success: function(data) {
+                console.log(data);
+            }
+        });
     });
 </script>
 
