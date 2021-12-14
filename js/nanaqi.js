@@ -154,7 +154,9 @@ nnq(function(nnq) {
         alter_ele.push(baseTop);
         alter_ele.push('px;"');
         alter_ele.push(' >');
-        alter_ele.push('<i class="nnq-message-icon nnq-icon-warnning"></i>');
+        alter_ele.push('<i class="nnq-message-icon ')
+        alter_ele.push(nnq.alter.defaults.icon);
+        alter_ele.push('"></i>');
         alter_ele.push('<span class="nnq-message-lable">');
         alter_ele.push(nnq.alter.defaults.message);
         alter_ele.push('</span>');
@@ -199,6 +201,9 @@ nnq(function(nnq) {
     nnq.alter = function(options) {
         if (typeof options == 'string') {
             nnq.alter.defaults.message = options;
+            nnq.alter.defaults.type = "primary";
+        } else {
+            nnq.extend(nnq.alter.defaults, options);
         }
         init(nnq);
     }
@@ -206,6 +211,7 @@ nnq(function(nnq) {
     nnq.alter.defaults = {
         message: "Tips Message",
         type: "primary",
+        icon: "nnq-icon-warnning",
         alterList: [],
         baseTop: 20,
         addTop: 64,
