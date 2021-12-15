@@ -48,7 +48,6 @@ nnq.prototype.find = function(selector) {
                 }
             }
         }
-        console.log(elements);
         return nnq(elements);
     }
     if (0 == selector.indexOf("#")) {
