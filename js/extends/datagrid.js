@@ -61,7 +61,7 @@ nnq(function() {
                     ele.push(cols[i].width);
                     ele.push('">');
                 }
-                ele.push('<input type="checkbox"/>');
+                ele.push('<label class="nnq-checkbox"> <span class="nnq-checkbox--input"> <input type="checkbox" hidden="hidden"> <span class="nnq-checkbox--icon"></span> </span> <span class="nnq-checkbox--lable"></span> </label>');
                 ele.push('</th>');
             } else {
                 ele.push('<th width="');
@@ -70,15 +70,17 @@ nnq(function() {
                 ele.push(cols[i].align);
                 ele.push('">');
                 ele.push('<div class="nnq-cell ">');
+                ele.push('<div class="aaa"></div>');
                 ele.push(cols[i].title);
                 ele.push('</div>');
             }
         }
         ele.push('</tr>');
         //add to header element
-        nnq(".nnq-table-header").each(function() {
+        nnq(opts.id).find(".nnq-table-header").each(function() {
             nnq(this).html(ele.join(""));
         })
+
     }
 
     nnq.fn.datagrid = function(options, param) {

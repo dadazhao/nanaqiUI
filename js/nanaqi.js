@@ -24,6 +24,41 @@ nnq.fn = nnq.prototype = {
         return this;
     }
 }
+nnq.prototype.find = function(selector) {
+    if (typeof selector != 'string')
+        return this;
+    if (this[0] instanceof HTMLCollection || this[0] instanceof Array) {
+        var elements = [];
+        for (var i = 0; i < this[0].length; i++) {
+
+            if (0 == selector.indexOf("#")) {
+                var eles = this[0][i].getElementById(selector.slice(1));
+                if (eles) {
+                    elements = elements.concat(Array.from(eles));
+                }
+            } else if (0 == selector.indexOf(".")) {
+                var eles = this[0][i].getElementsByClassName(selector.slice(1));
+                if (eles) {
+                    elements = elements.concat(Array.from(eles));
+                }
+            } else {
+                var eles = this[0][i].getElementsByTagName(selector);
+                if (eles) {
+                    elements = elements.concat(Array.from(eles));
+                }
+            }
+        }
+        console.log(elements);
+        return nnq(elements);
+    }
+    if (0 == selector.indexOf("#")) {
+        return nnq(this[0].getElementById(selector.slice(1)));
+    } else if (0 == selector.indexOf(".")) {
+        return nnq(this[0].getElementsByClassName(selector.slice(1)));
+    } else {
+        return nnq(this[0].getElementsByTagName(selector));
+    }
+}
 
 nnq.prototype.html = function(html) {
 
@@ -58,7 +93,7 @@ nnq.prototype.remove = function() {
 
 nnq.prototype.each = function(callback, args) {
     if (callback || this[0]) {
-        if (this[0] instanceof HTMLCollection) {
+        if (this[0] instanceof HTMLCollection || this[0] instanceof Array) {
             for (var i = 0; i < this[0].length; i++) {
                 callback.apply(this[0][i], args);
             }

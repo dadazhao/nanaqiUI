@@ -1397,7 +1397,7 @@ body {
 /* form css */
 
 .nnq-form-group {
-    margin-bottom: 15px;
+    margin: 15px 0px;
 }
 
 .nnq-form-control {
@@ -1412,7 +1412,7 @@ body {
 .nnq-checkbox {
     vertical-align: bottom;
     position: relative;
-    display: inline-block;
+    /* display: inline-block; */
 }
 
 .nnq-checkbox--input .nnq-checkbox--icon {
