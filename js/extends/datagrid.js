@@ -70,7 +70,6 @@ nnq(function() {
                 ele.push(cols[i].align);
                 ele.push('">');
                 ele.push('<div class="nnq-cell ">');
-                ele.push('<div class="aaa"></div>');
                 ele.push(cols[i].title);
                 ele.push('</div>');
             }
