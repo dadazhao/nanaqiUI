@@ -1,0 +1,30 @@
+.nnq-pagination,
+.nnq-pagination .nnq-icon {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1.3em;
+}
+
+.nnq-pagination .nnq-prev,
+.nnq-pagination .nnq-next {
+    background-color: white;
+    display: inline-block;
+    border: 0px;
+    margin: 0px;
+    padding: 5px 0px;
+}
+
+.nnq-pagination .nnq-pager {
+    list-style: none;
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+}
+
+.nnq-pagination .nnq-pager li {
+    display: inline-block;
+    line-height: 28px;
+    margin: 0px;
+    padding: 0px;
+    /* border: 1px solid red; */
+}

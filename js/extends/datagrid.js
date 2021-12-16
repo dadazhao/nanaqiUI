@@ -42,7 +42,7 @@ nnq(function() {
         //table body
         ele.push('<tbody class="nnq-table-body"></tbody>');
         //add to table container element
-        nnq(opts.id).html(ele.join(""));
+        nnq(jq).html(ele.join(""));
     }
 
     function createTableHeader(jq) {
@@ -55,10 +55,15 @@ nnq(function() {
         for (var i = 0; i < cols.length; i++) {
             if (cols[i].field == 'ck') {
                 if (cols[i].width == null) {
-                    ele.push('<th width="5%">');
+                    ele.push('<th width="5%"');
+                    ele.push('" align="');
+                    ele.push(cols[i].align);
+                    ele.push('">');
                 } else {
                     ele.push('<th width="');
                     ele.push(cols[i].width);
+                    ele.push('" align="');
+                    ele.push(cols[i].align);
                     ele.push('">');
                 }
                 ele.push('<label class="nnq-checkbox"> <span class="nnq-checkbox--input"> <input type="checkbox" hidden="hidden"> <span class="nnq-checkbox--icon"></span> </span> <span class="nnq-checkbox--lable"></span> </label>');
@@ -76,7 +81,7 @@ nnq(function() {
         }
         ele.push('</tr>');
         //add to header element
-        nnq(opts.id).find('.nnq-table-header').each(function() {
+        nnq(jq).find('.nnq-table-header').each(function() {
             nnq(this).html(ele.join(""));
         })
 
@@ -121,7 +126,7 @@ nnq(function() {
             for (var j = 0; j < cols.length; j++) {
                 //user interface
                 if (cols[j].template != null) {
-                    ele.push('<td width=' + cols[j].width + ' align=' + cols[j].align + '>');
+                    ele.push('<td width="' + cols[j].width + '" align="' + cols[j].align + '">');
                     ele.push('<div class="nnq-cell">');
                     ele.push(cols[j].template(json[i]));
                     ele.push('</div>');
@@ -129,13 +134,19 @@ nnq(function() {
                 } else {
                     if (cols[j].field == 'ck') {
                         if (cols[j].width == null) {
-                            ele.push('<td width="5%" align="center">');
+                            ele.push('<td width="5%"');
+                            ele.push(' align="');
+                            ele.push(cols[j].align);
+                            ele.push('">');
                         } else {
-                            ele.push('<td width="' + cols[j].width + '" align="center">');
+                            ele.push('<td width="' + cols[j].width + '"');
+                            ele.push(' align="');
+                            ele.push(cols[j].align);
+                            ele.push('">');
                         }
                         ele.push('<label class="nnq-checkbox"> <span class="nnq-checkbox--input"> <input type="checkbox" hidden="hidden"> <span class="nnq-checkbox--icon"></span> </span> <span class="nnq-checkbox--lable"></span> </label></td>');
                     } else {
-                        ele.push('<td width=' + cols[j].width + ' align=' + cols[j].align + '>');
+                        ele.push('<td width="' + cols[j].width + '" align="' + cols[j].align + '">');
                         ele.push('<div class="nnq-cell">');
                         ele.push(json[i][cols[j].field]);
                         ele.push('</div>');
@@ -145,7 +156,7 @@ nnq(function() {
             }
             ele.push('</tr>');
         }
-        nnq(opts.id).find('.nnq-table-body').each(function() {
+        nnq(jq).find('.nnq-table-body').each(function() {
             nnq(this).html(ele.join(""));
         })
     }
@@ -187,13 +198,14 @@ nnq(function() {
             url: url,
             type: type,
             async: false,
+            dataType: "json",
             //async
             data: params,
             success: function(data) {
                 result = data;
             }
         });
-        return JSON.parse(result);;
+        return result;
     }
     nnq.fn.datagrid.defaults = {
         // element id ps:"#id"
