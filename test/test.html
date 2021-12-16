@@ -9,6 +9,16 @@
 </head>
 
 <body>
+    <div class="aaaa">
+        <div class="bbb"></div>
+        <div class="bbb"></div>
+    </div>
+    <div id="aaaa">
+        <div id="bbb"></div>
+        <div class="bbb">
+            <div class="ccc"></div>
+        </div>
+    </div>
 </body>
 <script>
     nnq(function(nnq) {
@@ -18,6 +28,8 @@
                 console.log(data);
             }
         });
+
+        console.log(nnq("#bbb .ccc"));
     });
 </script>
 

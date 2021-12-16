@@ -14,6 +14,23 @@ nnq.fn = nnq.prototype = {
         this[0] = selector;
         if (typeof selector != 'string')
             return this;
+        // trim string 
+        selector = selector.trim();
+        if (-1 != selector.indexOf(" ")) {
+            if (-1 != selector.lastIndexOf("#")) {
+                selector = selector.slice(selector.lastIndexOf("#"));
+            }
+            var arr = selector.split(" ");
+            var eles = null;
+            for (var i = 0; i < arr.length; i++) {
+                if (!eles) {
+                    eles = nnq(arr[i])
+                } else {
+                    eles = eles.find(arr[i]);
+                }
+            }
+            return eles;
+        }
         if (0 == selector.indexOf("#")) {
             this[0] = document.getElementById(selector.slice(1));
         } else if (0 == selector.indexOf(".")) {
@@ -30,7 +47,6 @@ nnq.prototype.find = function(selector) {
     if (this[0] instanceof HTMLCollection || this[0] instanceof Array) {
         var elements = [];
         for (var i = 0; i < this[0].length; i++) {
-
             if (0 == selector.indexOf("#")) {
                 var eles = this[0][i].getElementById(selector.slice(1));
                 if (eles) {
