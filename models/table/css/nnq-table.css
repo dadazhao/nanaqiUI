@@ -1,69 +1,83 @@
 /* nnq-table css */
-.nnq-table{
+
+.nnq-table {
     width: 100%;
-	max-width: 100%;
-	border-spacing: 0px;
-	/* merge border */
-	border-collapse: collapse;
-	/* fixed td */
-	table-layout: fixed;
+    max-width: 100%;
+    border-spacing: 0px;
+    /* merge border */
+    border-collapse: collapse;
+    /* fixed td */
+    table-layout: fixed;
     color: #606266;
 }
 
+
 /* table header css */
-.nnq-table .nnq-table-header{
+
+.nnq-table .nnq-table-header {
     color: #909399;
     font-weight: bolder;
     background-color: #f5f7fa;
 }
 
+
 /* table body css */
-.nnq-table-body{
 
-}
+.nnq-table-body {}
 
-.nnq-table td,
-.nnq-table th{
+.nnq-table .nnq-table-cell,
+.nnq-table .nnq-table-title {
     border-bottom: 1px solid #ebeef5;
-    padding:12px 0px;
+    padding: 12px 0px;
 }
+
 
 /* table checkbox css */
-.nnq-table-checkbox{
+
+.nnq-table-checkbox {
     width: 6%;
 }
 
+
 /* table cell css */
-.nnq-table .nnq-cell{
+
+.nnq-table .nnq-cell {
     padding: 0px 10px;
     overflow: hidden;
     text-align: left;
 }
 
-.nnq-table-body [class*="nnq-icon-"], [class^="nnq-icon-"] {
-	padding:3px;
-	cursor: pointer;
-	padding-right:10px;
-	font-weight: bolder;
+.nnq-table-body [class*="nnq-icon-"],
+[class^="nnq-icon-"] {
+    padding: 3px;
+    cursor: pointer;
+    padding-right: 10px;
+    font-weight: bolder;
 }
 
-.nnq-table-content-indent{
-	display: inline-block;
-	width: 25px;
+.nnq-table-content-indent {
+    display: inline-block;
+    width: 25px;
 }
+
 
 /* table border css */
-.nnq-table--border th,
-.nnq-table--border td{
+
+.nnq-table--border .nnq-table-title,
+.nnq-table--border .nnq-table-cell {
     border: 1px solid #ebeef5;
 }
 
+
 /* table event css */
-.nnq-table--hover tr:hover{
+
+.nnq-table--hover .nnq-table-row:hover {
     background-color: #f5f7fa;
 }
 
+
 /* TABLE TR CSS */
-.nnq-table--color tr:nth-child(even) {
-	background-color: #fcf7f7;
+
+.nnq-table--color .nnq-table-row:nth-child(even) {
+    background-color: #fcf7f7;
 }

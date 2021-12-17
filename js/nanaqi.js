@@ -270,7 +270,6 @@ nnq(function(nnq) {
 
 })
 
-// table js
 window.onload = function() {
     var tableBranchClassName = "nnq-table__branch"
     var tableHideClassName = "nnq-hide";
@@ -340,7 +339,7 @@ window.onload = function() {
                 var id = trNodes[i].getAttribute(tableAttributeIdClassName);
                 var pid = trNodes[i].getAttribute(tableAttributeParentIdClassName);
                 if (parentId != null && parentId == pid) {
-                    trNodes[i].className = "";
+                    trNodes[i].className = "nnq-table-row";
                 }
             }
         }
@@ -370,7 +369,7 @@ window.onload = function() {
             if (nnq(this)[0].className.indexOf(outlineTreeCloseClassName) != -1) {
                 nnq(this)[0].className = nnq(this)[0].className.replace(outlineTreeCloseClassName, outlineTreeOpenClassName)
                 if (nnq(this)[0].parentNode.nextElementSibling) {
-                    nnq(this)[0].parentNode.nextElementSibling.className = "";
+                    nnq(this)[0].parentNode.nextElementSibling.className = "nnq-tree-ul";
                 }
                 return;
             }
@@ -385,10 +384,11 @@ window.onload = function() {
             if (nnq(this)[0].className.indexOf(defaultTreeCloseClassName) != -1) {
                 nnq(this)[0].className = nnq(this)[0].className.replace(defaultTreeCloseClassName, defaultTreeOpenClassName)
                 if (nnq(this)[0].parentNode.nextElementSibling) {
-                    nnq(this)[0].parentNode.nextElementSibling.className = "";
+                    nnq(this)[0].parentNode.nextElementSibling.className = "nnq-tree-ul";
                 }
                 return;
             }
         });
     });
+
 }

@@ -2410,8 +2410,8 @@ body {
 
 .nnq-table-body {}
 
-.nnq-table td,
-.nnq-table th {
+.nnq-table .nnq-table-cell,
+.nnq-table .nnq-table-title {
     border-bottom: 1px solid #ebeef5;
     padding: 12px 0px;
 }
@@ -2448,30 +2448,30 @@ body {
 
 /* table border css */
 
-.nnq-table--border th,
-.nnq-table--border td {
+.nnq-table--border .nnq-table-title,
+.nnq-table--border .nnq-table-cell {
     border: 1px solid #ebeef5;
 }
 
 
 /* table event css */
 
-.nnq-table--hover tr:hover {
+.nnq-table--hover .nnq-table-row:hover {
     background-color: #f5f7fa;
 }
 
 
 /* TABLE TR CSS */
 
-.nnq-table--color tr:nth-child(even) {
+.nnq-table--color .nnq-table-row:nth-child(even) {
     background-color: #fcf7f7;
 }
 
 
 /* tree css */
 
-.nnq-outline-tree ul,
-li {
+.nnq-outline-tree .nnq-tree-ul,
+.nnq-tree-li {
     list-style-type: none;
 }
 
@@ -2494,23 +2494,23 @@ li {
     padding: 0px 5px;
 }
 
-.nnq-outline-tree ul {
+.nnq-outline-tree .nnq-tree-ul {
     position: relative;
     padding-left: 60px;
     margin: 0px;
 }
 
-.nnq-outline-tree ul>li {
+.nnq-outline-tree .nnq-tree-ul>.nnq-tree-li {
     position: relative;
     padding: 5px 0;
 }
 
-.nnq-outline-tree>ul {
+.nnq-outline-tree>.nnq-tree-ul {
     padding: 0px;
     margin: 0px;
 }
 
-.nnq-outline-tree>ul ul>li:after {
+.nnq-outline-tree>.nnq-tree-ul .nnq-tree-ul>.nnq-tree-li:after {
     content: '';
     position: absolute;
     top: 20px;
@@ -2520,7 +2520,7 @@ li {
     border-top: 1px dotted #ddd;
 }
 
-.nnq-outline-tree>ul ul>li:not(:last-child):before {
+.nnq-outline-tree>.nnq-tree-ul .nnq-tree-ul>.nnq-tree-li:not(:last-child):before {
     content: '';
     position: absolute;
     top: 0;
@@ -2530,7 +2530,7 @@ li {
     border-left: 1px dotted #ddd;
 }
 
-.nnq-outline-tree>ul ul>li:last-child:before {
+.nnq-outline-tree>.nnq-tree-ul .nnq-tree-ul>.nnq-tree-li:last-child:before {
     content: '';
     position: absolute;
     top: 0;
@@ -2541,15 +2541,15 @@ li {
 }
 
 .nnq-outline-tree--hover .nnq-outline-tree__inner:hover,
-.nnq-outline-tree--hover .nnq-outline-tree__inner:hover+ul .nnq-outline-tree__inner {
+.nnq-outline-tree--hover .nnq-outline-tree__inner:hover+.nnq-tree-ul .nnq-outline-tree__inner {
     color: #fff;
     background-color: orange;
 }
 
 .nnq-outline-tree--hover .nnq-outline-tree__inner:hover,
-.nnq-outline-tree--hover .nnq-outline-tree__inner:hover+ul .nnq-outline-tree__inner,
-.nnq-outline-tree--hover .nnq-outline-tree__inner:hover+ul li:before,
-.nnq-outline-tree--hover .nnq-outline-tree__inner:hover+ul li:after {
+.nnq-outline-tree--hover .nnq-outline-tree__inner:hover+.nnq-tree-ul .nnq-outline-tree__inner,
+.nnq-outline-tree--hover .nnq-outline-tree__inner:hover+.nnq-tree-ul .nnq-tree-li:before,
+.nnq-outline-tree--hover .nnq-outline-tree__inner:hover+.nnq-tree-ul .nnq-tree-li:after {
     border-color: orange;
 }
 
@@ -2565,8 +2565,8 @@ li {
 
 /* default tree css */
 
-.nnq-tree ul,
-li {
+.nnq-tree .nnq-tree-ul,
+.nnq-tree-li {
     list-style-type: none;
 }
 
@@ -2576,17 +2576,17 @@ li {
     padding: 5px 15px;
 }
 
-.nnq-tree ul {
+.nnq-tree .nnq-tree-ul {
     position: relative;
     padding-left: 18px;
     margin: 0px;
 }
 
-.nnq-tree ul>li {
+.nnq-tree .nnq-tree-ul>.nnq-tree-li {
     position: relative;
 }
 
-.nnq-tree>ul {
+.nnq-tree>.nnq-tree-ul {
     padding: 0px;
     margin: 0px;
 }

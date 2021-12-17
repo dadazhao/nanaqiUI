@@ -1,0 +1,290 @@
+< !DOCTYPE html >
+    <
+    html >
+
+    <
+    head >
+    <
+    meta charset = "utf-8" >
+    <
+    title > 表格样式 < /title> <
+    link href = "../../common/css/common.css"
+type = "text/css"
+rel = "stylesheet" / >
+    <
+    link href = "../css/nnq-table.css"
+type = "text/css"
+rel = "stylesheet" / >
+    <
+    link href = "../../icons/css/nnq-icons.css"
+type = "text/css"
+rel = "stylesheet" / >
+    <
+    script src = "../../../js/nanaqi.js"
+type = "text/javascript" > < /script> <
+    script src = "../js/nnq-table.js"
+type = "text/javascript" > < /script> <
+    /head>
+
+<
+body >
+    <
+    div class = "nnq-container" >
+    <
+    h4 > 数据表格 < /h4> <
+    div class = "nnq-bs-example" >
+    <
+    table class = "nnq-table nnq-table--hover nnq-table--border" >
+    <
+    thead class = "nnq-table-header" >
+    <
+    tr class = "nnq-table-row" >
+    <
+    th class = "nnq-table-title" >
+    <
+    div class = "nnq-cell" > 标题 < /div> <
+    /th> <
+    th class = "nnq-table-title" >
+    <
+    div class = "nnq-cell " > 标题 < /div> <
+    /th> <
+    th class = "nnq-table-title" >
+    <
+    div class = "nnq-cell" > 标题 < /div> <
+    /th> <
+    th class = "nnq-table-title" >
+    <
+    div class = "nnq-cell" > 标题 < /div> <
+    /th> <
+    /tr> <
+    /thead> <
+    tbody class = "nnq-table-body" >
+    <
+    tr class = "nnq-table-row" >
+    <
+    td class = "nnq-table-cell" >
+    <
+    div class = "nnq-cell" > 标题 < /div> <
+    /td> <
+    td class = "nnq-table-cell" >
+    <
+    div class = "nnq-cell" > 标题 < /div> <
+    /td> <
+    td class = "nnq-table-cell" >
+    <
+    div class = "nnq-cell" > 标题 < /div> <
+    /td> <
+    td class = "nnq-table-cell" >
+    <
+    div class = "nnq-cell" > 标题 < /div> <
+    /td> <
+    /tr> <
+    tr class = "nnq-table-row" >
+    <
+    td class = "nnq-table-cell" >
+    <
+    div class = "nnq-cell" > 标题 < /div> <
+    /td> <
+    td class = "nnq-table-cell" >
+    <
+    div class = "nnq-cell" > 标题 < /div> <
+    /td> <
+    td class = "nnq-table-cell" >
+    <
+    div class = "nnq-cell" > 标题 < /div> <
+    /td> <
+    td class = "nnq-table-cell" >
+    <
+    div class = "nnq-cell" > 标题 < /div> <
+    /td> <
+    /tr> <
+    tr class = "nnq-table-row" >
+    <
+    td class = "nnq-table-cell" >
+    <
+    div class = "nnq-cell" > 标题 < /div> <
+    /td> <
+    td class = "nnq-table-cell" >
+    <
+    div class = "nnq-cell" > 标题 < /div> <
+    /td> <
+    td class = "nnq-table-cell" >
+    <
+    div class = "nnq-cell" > 标题 < /div> <
+    /td> <
+    td class = "nnq-table-cell" >
+    <
+    div class = "nnq-cell" > 标题 < /div> <
+    /td> <
+    /tr> <
+    /tbody> <
+    /table> <
+    /div>
+
+<
+div class = "nnq-bs-example" >
+    <
+    h4 > 树形表格 < /h4> <
+    table class = "nnq-table nnq-table--hover nnq-table--border" >
+    <
+    thead class = "nnq-table-header" >
+    <
+    tr class = "nnq-table-row" >
+    <
+    th class = "nnq-table-title" >
+    <
+    div class = "nnq-cell" > 标题 < /div> <
+    /th> <
+    th class = "nnq-table-title" >
+    <
+    div class = "nnq-cell " > 标题 < /div> <
+    /th> <
+    th class = "nnq-table-title" >
+    <
+    div class = "nnq-cell" > 标题 < /div> <
+    /th> <
+    th class = "nnq-table-title" >
+    <
+    div class = "nnq-cell" > 标题 < /div> <
+    /th> <
+    /tr> <
+    /thead> <
+    tbody class = "nnq-table-body" >
+    <
+    tr class = "nnq-table-row"
+nnq - id = "1" >
+    <
+    td class = "nnq-table-cell" >
+    <
+    div class = "nnq-cell" > < i class = "nnq-table__branch nnq-icon-down-arrows" > < /i>标题</div >
+    <
+    /td> <
+    td class = "nnq-table-cell" >
+    <
+    div class = "nnq-cell" > 标题 < /div> <
+    /td> <
+    td class = "nnq-table-cell" >
+    <
+    div class = "nnq-cell" > 标题 < /div> <
+    /td> <
+    td class = "nnq-table-cell" >
+    <
+    div class = "nnq-cell" > 标题 < /div> <
+    /td> <
+    /tr> <
+    tr class = "nnq-table-row"
+nnq - id = "2"
+nnq - pid = "1" >
+    <
+    td class = "nnq-table-cell" >
+    <
+    div class = "nnq-cell" > < span class = "nnq-table-content-indent" > < /span><i class="nnq-icon-space"></i > 标题 < /div> <
+    /td> <
+    td class = "nnq-table-cell" >
+    <
+    div class = "nnq-cell" > 标题 < /div> <
+    /td> <
+    td class = "nnq-table-cell" >
+    <
+    div class = "nnq-cell" > 标题 < /div> <
+    /td> <
+    td class = "nnq-table-cell" >
+    <
+    div class = "nnq-cell" > 标题 < /div> <
+    /td> <
+    /tr> <
+    tr class = "nnq-table-row"
+nnq - id = "3"
+nnq - pid = "1" >
+    <
+    td class = "nnq-table-cell" >
+    <
+    div class = "nnq-cell" > < span class = "nnq-table-content-indent" > < /span><i class="nnq-table__branch nnq-icon-down-arrows"></i > 标题 < /div> <
+    /td> <
+    td class = "nnq-table-cell" >
+    <
+    div class = "nnq-cell" > 标题 < /div> <
+    /td> <
+    td class = "nnq-table-cell" >
+    <
+    div class = "nnq-cell" > 标题 < /div> <
+    /td> <
+    td class = "nnq-table-cell" >
+    <
+    div class = "nnq-cell" > 标题 < /div> <
+    /td> <
+    /tr> <
+    tr class = "nnq-table-row"
+nnq - id = "4"
+nnq - pid = "3" >
+    <
+    td class = "nnq-table-cell" >
+    <
+    div class = "nnq-cell" > < span class = "nnq-table-content-indent" > < /span><span class="nnq-table-content-indent"></span > < i class = "nnq-icon-space" > < /i>标题</div >
+    <
+    /td> <
+    td class = "nnq-table-cell" >
+    <
+    div class = "nnq-cell" > 标题 < /div> <
+    /td> <
+    td class = "nnq-table-cell" >
+    <
+    div class = "nnq-cell" > 标题 < /div> <
+    /td> <
+    td class = "nnq-table-cell" >
+    <
+    div class = "nnq-cell" > 标题 < /div> <
+    /td> <
+    /tr> <
+    tr class = "nnq-table-row"
+nnq - id = "5" >
+    <
+    td class = "nnq-table-cell" >
+    <
+    div class = "nnq-cell" > < i class = "nnq-table__branch nnq-icon-right-arrows" > < /i>标题</div >
+    <
+    /td> <
+    td class = "nnq-table-cell" >
+    <
+    div class = "nnq-cell" > 标题 < /div> <
+    /td> <
+    td class = "nnq-table-cell" >
+    <
+    div class = "nnq-cell" > 标题 < /div> <
+    /td> <
+    td class = "nnq-table-cell" >
+    <
+    div class = "nnq-cell" > 标题 < /div> <
+    /td> <
+    /tr> <
+    tr class = "nnq-table-row"
+nnq - id = "6" >
+    <
+    td class = "nnq-table-cell" >
+    <
+    div class = "nnq-cell" > < i class = "nnq-icon-space" > < /i>标题</div >
+    <
+    /td> <
+    td class = "nnq-table-cell" >
+    <
+    div class = "nnq-cell" > 标题 < /div> <
+    /td> <
+    td class = "nnq-table-cell" >
+    <
+    div class = "nnq-cell" > 标题 < /div> <
+    /td> <
+    td class = "nnq-table-cell" >
+    <
+    div class = "nnq-cell" > 标题 < /div> <
+    /td> <
+    /tr>
+
+<
+/tbody> <
+/table> <
+/div> <
+/div> <
+/body>
+
+<
+/html>
