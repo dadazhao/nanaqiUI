@@ -130,6 +130,18 @@ nnq.prototype.click = function(callback, args) {
     }
 }
 
+nnq.prototype.attr = function(name, value) {
+    if (this[0]) {
+        if (name) {
+            if (value) {
+                this[0].setAttribute(name, value);
+            } else {
+                return this[0].getAttribute(name);
+            }
+        }
+    }
+}
+
 // object extend method
 nnq.extend = function(destination, source) {
     if (typeof destination == "object") {
@@ -176,6 +188,7 @@ nnq.data = function(obj, name, value) {
         setData(cache, name, value);
     }
 }
+
 nnq.fn.init.prototype = nnq.fn;
 window.nnq = nnq;
 
