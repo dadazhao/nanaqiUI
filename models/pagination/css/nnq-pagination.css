@@ -3,6 +3,26 @@
     vertical-align: middle;
 }
 
+.nnq-pagination .nnq-pagination-total,
+.nnq-pagination .nnq-pagination-skip {
+    color: rgb(134, 133, 133);
+    margin-right: 10px;
+    display: inline;
+}
+
+.nnq-pagination .nnq-pagination-size {
+    padding: 3px;
+}
+
+.nnq-pagination .nnq-pagination-skip .nnq-pagination-skip-number {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0px 5px;
+    padding: 4px;
+    width: 50px;
+}
+
 .nnq-pagination,
 .nnq-pagination .nnq-icon {
     margin: 0px;
@@ -10,44 +30,45 @@
     font-size: 1.3em;
 }
 
-.nnq-pagination .nnq-prev,
-.nnq-pagination .nnq-next {
+.nnq-pagination .nnq-pagination-prev,
+.nnq-pagination .nnq-pagination-next {
     background-color: white;
     display: inline-block;
     border: 0px;
     margin: 0px;
 }
 
-.nnq-pagination .nnq-pager {
+.nnq-pagination .nnq-pagination-pager {
     list-style: none;
     display: inline-block;
     margin: 0px;
     padding: 0px;
 }
 
-.nnq-pagination .nnq-pager .number {
+.nnq-pagination .nnq-pagination-pager .number {
     display: inline-block;
+    cursor: pointer;
     margin: 0px;
     padding: 0px 10px;
 }
 
-.nnq-pagination .nnq-pager .number:active {
+.nnq-pagination .nnq-pagination-pager .number:active {
     background-color: #409eff;
     color: #fff;
 }
 
-.nnq-pagination--background .nnq-pager .number,
-.nnq-pagination--background .nnq-prev,
-.nnq-pagination--background .nnq-next {
+.nnq-pagination--background .nnq-pagination-pager .number,
+.nnq-pagination--background .nnq-pagination-prev,
+.nnq-pagination--background .nnq-pagination-next {
     background-color: #f4f4f5;
 }
 
-.nnq-pagination.nnq-pagination--background .nnq-pager--active {
+.nnq-pagination.nnq-pagination--background .nnq-pagination-pager--active {
     background-color: #409eff;
     color: #fff;
 }
 
-.nnq-pager--active {
+.nnq-pagination-pager--active {
     background-color: #409eff;
     color: #fff;
 }

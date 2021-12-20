@@ -9,6 +9,16 @@ var isFunc = function(obj) {
     return typeof obj === "function" && typeof obj.nodeType !== "number";
 }
 
+var toArray = function(collection) {
+    var arr = [];
+    if (collection && collection instanceof HTMLCollection) {
+        for (let i = 0; i < collection.length; i++) {
+            arr.push(collection[i]);
+        }
+    }
+    return arr;
+}
+
 nnq.fn = nnq.prototype = {
     init: function(selector) {
         this[0] = selector;
@@ -50,17 +60,17 @@ nnq.prototype.find = function(selector) {
             if (0 == selector.indexOf("#")) {
                 var eles = this[0][i].getElementById(selector.slice(1));
                 if (eles) {
-                    elements = elements.concat(Array.from(eles));
+                    elements = elements.concat(toArray(eles));
                 }
             } else if (0 == selector.indexOf(".")) {
                 var eles = this[0][i].getElementsByClassName(selector.slice(1));
                 if (eles) {
-                    elements = elements.concat(Array.from(eles));
+                    elements = elements.concat(toArray(eles));
                 }
             } else {
                 var eles = this[0][i].getElementsByTagName(selector);
                 if (eles) {
-                    elements = elements.concat(Array.from(eles));
+                    elements = elements.concat(toArray(eles));
                 }
             }
         }
