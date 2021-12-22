@@ -2,229 +2,232 @@
 <html>
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport"
-		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
-	<title></title>
-	<style>
-		html,
-		body {
-			height: 100%;
-			padding: 0px;
-			margin: 0px;
-		}
-
-		.nnq-layout-main {
-			position: relative;
-			height: 100%;
-			padding: 0px;
-			margin: 0px;
-		}
-
-		.nnq-layout__left {}
-
-		.nnq-layout__left-open {
-			position: absolute;
-			top: 0px;
-			left: 0px;
-			width: 20%;
-			height: 100%;
-			border-right: gray solid 1px;
-			/* background-color: #0993FC; */
-		}
-
-		.nnq-layout__left-close {
-			position: absolute;
-			top: 0px;
-			left: 0px;
-			width: 0%;
-			height: 100%;
-			overflow: hidden;
-			border-right: gray solid 1px;
-			/* background-color: #0993FC; */
-		}
-
-		.nnq-layout__right {}
-
-		.nnq-layout__right-close {
-			position: absolute;
-			top: 0px;
-			left: 20%;
-			width: 80%;
-			height: 100%;
-			padding: 0px;
-			margin: 0px;
-			/* background-color: gray; */
-		}
-
-		.nnq-layout__right-open {
-			position: absolute;
-			top: 0px;
-			left: 0px;
-			width: 100%;
-			height: 100%;
-			padding: 0px;
-			margin: 0px;
-			/* background-color: gray; */
-		}
-
-		.nnq-logo {
-			color: gray;
-			padding: 15px;
-			font-size: 2.5rem;
-			font-weight: bolder;
-			text-align: center;
-			vertical-align: middle;
-		}
-
-		.nnq-menu ul {
-			list-style: none;
-			padding-inline-start: 0px;
-			padding: 0px;
-			margin: 0px;
-		}
-
-		.nnq-menu ul li {
-			font-size: 1.0em;
-			padding: 15px 0px;
-			text-align: center;
-			vertical-align: middle;
-			border-bottom: #DDDDDD solid 1px;
-		}
-
-		.nnq-menu ul a {
-			color: gray;
-			text-decoration: none;
-			font-size: 1.0em;
-			font-weight: bold;
-		}
-
-		.nnq-menu ul a:hover {
-			color: palegoldenrod;
-		}
-
-		.nnq-web-panel {
-			padding: 0px;
-			margin: 0px;
-			width: 100%;
-			height: 100%;
-			overflow: auto;
-			border-width: 0px;
-		}
-
-		/* toggle css */
-		.nnq-toggle {
-			position: absolute;
-			top: 20px;
-			left: 25px;
-		}
-
-		.nnq-toggle div {
-			display: block;
-			width: 30px;
-			height: 4px;
-			background-color: black;
-			margin: 5px 0px;
-		}
-	</style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <title></title>
+    <style>
+        html,
+        body {
+            height: 100%;
+            padding: 0px;
+            margin: 0px;
+        }
+        
+        .nnq-layout-main {
+            position: relative;
+            height: 100%;
+            padding: 0px;
+            margin: 0px;
+        }
+        
+        .nnq-layout__left {}
+        
+        .nnq-layout__left-open {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 20%;
+            height: 100%;
+            border-right: gray solid 1px;
+            /* background-color: #0993FC; */
+        }
+        
+        .nnq-layout__left-close {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 0%;
+            height: 100%;
+            overflow: hidden;
+            border-right: gray solid 1px;
+            /* background-color: #0993FC; */
+        }
+        
+        .nnq-layout__right {}
+        
+        .nnq-layout__right-close {
+            position: absolute;
+            top: 0px;
+            left: 20%;
+            width: 80%;
+            height: 100%;
+            padding: 0px;
+            margin: 0px;
+            /* background-color: gray; */
+        }
+        
+        .nnq-layout__right-open {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            padding: 0px;
+            margin: 0px;
+            /* background-color: gray; */
+        }
+        
+        .nnq-logo {
+            color: gray;
+            padding: 15px;
+            font-size: 2.5rem;
+            font-weight: bolder;
+            text-align: center;
+            vertical-align: middle;
+        }
+        
+        .nnq-menu ul {
+            list-style: none;
+            padding-inline-start: 0px;
+            padding: 0px;
+            margin: 0px;
+        }
+        
+        .nnq-menu ul li {
+            font-size: 1.0em;
+            padding: 15px 0px;
+            text-align: center;
+            vertical-align: middle;
+            border-bottom: #DDDDDD solid 1px;
+        }
+        
+        .nnq-menu ul a {
+            color: gray;
+            text-decoration: none;
+            font-size: 1.0em;
+            font-weight: bold;
+        }
+        
+        .nnq-menu ul a:hover {
+            color: palegoldenrod;
+        }
+        
+        .nnq-web-panel {
+            padding: 0px;
+            margin: 0px;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            border-width: 0px;
+        }
+        /* toggle css */
+        
+        .nnq-toggle {
+            position: absolute;
+            top: 20px;
+            left: 25px;
+        }
+        
+        .nnq-toggle div {
+            display: block;
+            width: 30px;
+            height: 4px;
+            background-color: black;
+            margin: 5px 0px;
+        }
+    </style>
 </head>
 
 <body>
-	<div class="nnq-layout-main">
-		<div class="nnq-layout__left  nnq-layout__left-open">
-			<div class="nnq-logo">
-				NANAQI-UI
-			</div>
-			<div class="nnq-menu">
-				<ul>
-					<li>
-						<a href="./models/button/html/nnq-button.html" target="panel">按钮组件</a>
-					</li>
+    <div class="nnq-layout-main">
+        <div class="nnq-layout__left  nnq-layout__left-open">
+            <div class="nnq-logo">
+                NANAQI-UI
+            </div>
+            <div class="nnq-menu">
+                <ul>
+                    <li>
+                        <a href="./models/button/html/nnq-button.html" target="panel">按钮组件</a>
+                    </li>
 
-					<li>
-						<a href="./models/form/html/nnq-form.html" target="panel">表单组件</a>
-					</li>
+                    <li>
+                        <a href="./models/form/html/nnq-form.html" target="panel">表单组件</a>
+                    </li>
 
-					<li>
-						<a href="./models/icons/html/nnq-icons.html" target="panel">图标组件</a>
-					</li>
+                    <li>
+                        <a href="./models/icons/html/nnq-icons.html" target="panel">图标组件</a>
+                    </li>
 
-					<li>
-						<a href="./models/table/html/nnq-table.html" target="panel">表格组件</a>
-					</li>
+                    <li>
+                        <a href="./models/table/html/nnq-table.html" target="panel">表格组件</a>
+                    </li>
 
-					<li>
-						<a href="./models/tree/html/nnq-tree.html" target="panel">树组件</a>
-					</li>
+                    <li>
+                        <a href="./models/tree/html/nnq-tree.html" target="panel">树组件</a>
+                    </li>
 
-					<li>
-						<a href="./models/image/html/nnq-image.html" target="panel">图片组件</a>
-					</li>
+                    <li>
+                        <a href="./models/image/html/nnq-image.html" target="panel">图片组件</a>
+                    </li>
 
-					<li>
-						<a href="./models/card/html/nnq-card.html" target="panel">Card组件</a>
-					</li>
+                    <li>
+                        <a href="./models/card/html/nnq-card.html" target="panel">Card组件</a>
+                    </li>
 
-					<li>
-						<a href="./models/alter/html/nnq-alter.html" target="panel">Alter组件</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<div class="nnq-layout__right nnq-layout__right-close">
-			<div class="nnq-toggle">
-				<label>
+                    <li>
+                        <a href="./models/alter/html/nnq-alter.html" target="panel">Alter组件</a>
+                    </li>
+
+                    <li>
+                        <a href="./models/pagination/html/nnq-pagination.html" target="panel">分页组件</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="nnq-layout__right nnq-layout__right-close">
+            <div class="nnq-toggle">
+                <label>
 					<div class="nnq-toggle-first"></div>
 					<div class="nnq-toggle-second"></div>
 					<div class="nnq-toggle-third"></div>
 				</label>
-			</div>
-			<iframe class="nnq-web-panel" name="panel"></iframe>
-		</div>
-	</div>
+            </div>
+            <iframe class="nnq-web-panel" name="panel"></iframe>
+        </div>
+    </div>
 </body>
 <script>
-	window.onload = function () {
-		var toggleClassName = "nnq-toggle";
-		var layoutLeftCloseClassName = "nnq-layout__left-close";
-		var layoutLeftOpenClassName = "nnq-layout__left-open";
+    window.onload = function() {
+        var toggleClassName = "nnq-toggle";
+        var layoutLeftCloseClassName = "nnq-layout__left-close";
+        var layoutLeftOpenClassName = "nnq-layout__left-open";
 
-		var layoutRightCloseClassName = "nnq-layout__right-close";
-		var layoutRightOpenClassName = "nnq-layout__right-open";
+        var layoutRightCloseClassName = "nnq-layout__right-close";
+        var layoutRightOpenClassName = "nnq-layout__right-open";
 
-		var toggleEles = document.getElementsByClassName(toggleClassName);
-		for (var i = 0; i < toggleEles.length; i++) {
-			toggleEles[i].onclick = function () {
-				//left hidden/visibly
-				var leftLayoutEles = document.getElementsByClassName("nnq-layout__left");
-				//right hidden/visibly
-				var rightLayoutEles = document.getElementsByClassName("nnq-layout__right");
-				for (var i = 0; i < leftLayoutEles.length; i++) {
-					if (leftLayoutEles[i].className) {
-						if (leftLayoutEles[i].className.indexOf(layoutLeftCloseClassName) != -1) {
-							leftLayoutEles[i].className = leftLayoutEles[i].className.replace(layoutLeftCloseClassName, layoutLeftOpenClassName);
-							for (var i = 0; i < rightLayoutEles.length; i++) {
-								if (rightLayoutEles[i].className) {
-									rightLayoutEles[i].className = rightLayoutEles[i].className.replace(layoutRightOpenClassName, layoutRightCloseClassName)
-								}
-							}
-							continue;
-						}
-						if (leftLayoutEles[i].className.indexOf(layoutLeftOpenClassName) != -1) {
-							leftLayoutEles[i].className = leftLayoutEles[i].className.replace(layoutLeftOpenClassName, layoutLeftCloseClassName);
-							for (var i = 0; i < rightLayoutEles.length; i++) {
-								if (rightLayoutEles[i].className) {
-									rightLayoutEles[i].className = rightLayoutEles[i].className.replace(layoutRightCloseClassName, layoutRightOpenClassName)
-								}
-							}
-							continue;
-						}
-					}
-				}
+        var toggleEles = document.getElementsByClassName(toggleClassName);
+        for (var i = 0; i < toggleEles.length; i++) {
+            toggleEles[i].onclick = function() {
+                //left hidden/visibly
+                var leftLayoutEles = document.getElementsByClassName("nnq-layout__left");
+                //right hidden/visibly
+                var rightLayoutEles = document.getElementsByClassName("nnq-layout__right");
+                for (var i = 0; i < leftLayoutEles.length; i++) {
+                    if (leftLayoutEles[i].className) {
+                        if (leftLayoutEles[i].className.indexOf(layoutLeftCloseClassName) != -1) {
+                            leftLayoutEles[i].className = leftLayoutEles[i].className.replace(layoutLeftCloseClassName, layoutLeftOpenClassName);
+                            for (var i = 0; i < rightLayoutEles.length; i++) {
+                                if (rightLayoutEles[i].className) {
+                                    rightLayoutEles[i].className = rightLayoutEles[i].className.replace(layoutRightOpenClassName, layoutRightCloseClassName)
+                                }
+                            }
+                            continue;
+                        }
+                        if (leftLayoutEles[i].className.indexOf(layoutLeftOpenClassName) != -1) {
+                            leftLayoutEles[i].className = leftLayoutEles[i].className.replace(layoutLeftOpenClassName, layoutLeftCloseClassName);
+                            for (var i = 0; i < rightLayoutEles.length; i++) {
+                                if (rightLayoutEles[i].className) {
+                                    rightLayoutEles[i].className = rightLayoutEles[i].className.replace(layoutRightCloseClassName, layoutRightOpenClassName)
+                                }
+                            }
+                            continue;
+                        }
+                    }
+                }
 
-			}
-		}
-	}
+            }
+        }
+    }
 </script>
 
 </html>

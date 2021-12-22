@@ -140,6 +140,30 @@ nnq.prototype.click = function(callback, args) {
     }
 }
 
+nnq.prototype.change = function(callback, args) {
+    if (callback || this[0]) {
+        if (this[0] instanceof HTMLCollection) {
+            for (var i = 0; i < this[0].length; i++) {
+                this[0].addEventListener("change", callback);
+            }
+        } else {
+            this[0].addEventListener("change", callback);
+        }
+    }
+}
+
+nnq.prototype.blur = function(callback, args) {
+    if (callback || this[0]) {
+        if (this[0] instanceof HTMLCollection) {
+            for (var i = 0; i < this[0].length; i++) {
+                this[0].addEventListener("blur", callback);
+            }
+        } else {
+            this[0].addEventListener("blur", callback);
+        }
+    }
+}
+
 nnq.prototype.attr = function(name, value) {
     if (this[0]) {
         if (name) {
@@ -148,6 +172,16 @@ nnq.prototype.attr = function(name, value) {
             } else {
                 return this[0].getAttribute(name);
             }
+        }
+    }
+}
+
+nnq.prototype.value = function(value) {
+    if (this[0]) {
+        if (value) {
+            this[0].value = value;
+        } else {
+            return this[0].value;
         }
     }
 }

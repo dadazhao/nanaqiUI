@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>按钮样式</title>
+    <title>分页</title>
     <link href="../../common/css/common.css" type="text/css" rel="stylesheet" />
     <link href="../../icons/css/nnq-icons.css" type="text/css" rel="stylesheet" />
     <link href="../css/nnq-pagination.css" type="text/css" rel="stylesheet" />
@@ -13,44 +13,29 @@
 
 <body>
     <div class="nnq-container">
-        <div class="nnq-pagination" total=7 current=2>
-            <div class="nnq-pagination-total">共1000条</div>
-            <select class="nnq-pagination-size">
-                <option value="100">100条/页</option>
-                <option value="200">200条/页</option>
-                <option value="300">300条/页</option>
-            </select>
-            <button class="nnq-pagination-prev"><i class="nnq-icon nnq-icon-left-arrows"></i></button>
-            <ul class="nnq-pagination-pager">
-            </ul>
-            <button class="nnq-pagination-next"><i class="nnq-icon nnq-icon-right-arrows"></i></button>
-            <div class="nnq-pagination-skip">前往<input class="nnq-pagination-skip-number" value="1" type="text" />页</div>
-        </div>
-    </div>
-    <div class="nnq-container">
-        <div class="nnq-pagination" total=8 current=4>
-            <button class="nnq-pagination-prev"><i class="nnq-icon nnq-icon-left-arrows"></i></button>
-            <ul class="nnq-pagination-pager">
-            </ul>
-            <button class="nnq-pagination-next"><i class="nnq-icon nnq-icon-right-arrows"></i></button>
-        </div>
-    </div>
-    <div class="nnq-container">
-        <div class="nnq-pagination" total=8 current=5>
-            <button class="nnq-pagination-prev"><i class="nnq-icon nnq-icon-left-arrows"></i></button>
-            <ul class="nnq-pagination-pager">
-            </ul>
-            <button class="nnq-pagination-next"><i class="nnq-icon nnq-icon-right-arrows"></i></button>
-        </div>
-    </div>
-    <div class="nnq-container">
-        <div class="nnq-pagination" total=24 current=14>
-            <button class="nnq-pagination-prev"><i class="nnq-icon nnq-icon-left-arrows"></i></button>
-            <ul class="nnq-pagination-pager">
-            </ul>
-            <button class="nnq-pagination-next"><i class="nnq-icon nnq-icon-right-arrows"></i></button>
-        </div>
+        <div id="pagination1"></div>
+        <div id="pagination2"></div>
+        <div id="pagination3"></div>
     </div>
 </body>
+
+<script>
+    window.onload = function() {
+        nnq("#pagination1").pagination();
+        nnq("#pagination3").pagination({
+            total: 655,
+            showTotalNum: true,
+            showPageSize: true,
+            showSkipPage: true
+        });
+        nnq("#pagination2").pagination({
+
+            showTotalNum: true,
+            "skipEvent": function(current, totalPage) {
+                console.log(current + "===" + totalPage);
+            }
+        });
+    }
+</script>
 
 </html>
