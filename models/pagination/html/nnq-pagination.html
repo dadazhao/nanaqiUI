@@ -31,8 +31,8 @@
         nnq("#pagination2").pagination({
 
             showTotalNum: true,
-            "skipEvent": function(current, totalPage) {
-                console.log(current + "===" + totalPage);
+            "skipEvent": function(current, pageSize, totalPage) {
+                console.log(current + "=" + pageSize + "=" + totalPage);
             }
         });
     }

@@ -234,7 +234,7 @@ nnq(function(nnq) {
         var pagination = nnq.data(nq, "pagination");
         var opts = pagination.options;
         if (isFunc(opts.skipEvent)) {
-            opts.skipEvent(opts.current, opts.totalPage);
+            opts.skipEvent(opts.current, opts.pageSize, opts.totalPage);
         }
     }
 
