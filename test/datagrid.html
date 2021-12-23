@@ -16,9 +16,9 @@
                 //paging: true,
                 isHoverColor: true,
                 isEvenColor: true,
-                showText: ["首页", "上一页", "下一页", "尾页"],
                 columns: [{
                     field: 'ck',
+                    value: 'id',
                     align: 'center'
                 }, {
                     field: 'id',
@@ -40,7 +40,7 @@
                     field: 'action',
                     title: '操作',
                     template: function(row) {
-                        return '<a class="nnq-button" href="#">Default</a>';
+                        return '<a class="nnq-button nnq-button--mn" href="#">Default</a>';
                     }
                 }],
                 data: {

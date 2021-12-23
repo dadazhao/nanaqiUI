@@ -51,16 +51,16 @@ nnq(function() {
         //table column format
         var cols = opts.columns;
         //header start
-        var ele = ['<tr>'];
+        var ele = ['<tr class="nnq-table-row">'];
         for (var i = 0; i < cols.length; i++) {
             if (cols[i].field == 'ck') {
                 if (cols[i].width == null) {
-                    ele.push('<th width="5%"');
+                    ele.push('<th  class="nnq-table-title" width="5%"');
                     ele.push('" align="');
                     ele.push(cols[i].align);
                     ele.push('">');
                 } else {
-                    ele.push('<th width="');
+                    ele.push('<th  class="nnq-table-title" width="');
                     ele.push(cols[i].width);
                     ele.push('" align="');
                     ele.push(cols[i].align);
@@ -69,7 +69,7 @@ nnq(function() {
                 ele.push('<label class="nnq-checkbox"> <span class="nnq-checkbox--input"> <input type="checkbox" hidden="hidden"> <span class="nnq-checkbox--icon"></span> </span> <span class="nnq-checkbox--lable"></span> </label>');
                 ele.push('</th>');
             } else {
-                ele.push('<th width="');
+                ele.push('<th class="nnq-table-title" width="');
                 ele.push(cols[i].width);
                 ele.push('" align="');
                 ele.push(cols[i].align);
@@ -121,12 +121,12 @@ nnq(function() {
         for (var i = startRow; i < endRow; i++) {
             //Crossing the line detection
             if (i >= json.length) break;
-            ele.push('<tr>');
+            ele.push('<tr class="nnq-table-row" >');
             //list cols
             for (var j = 0; j < cols.length; j++) {
                 //user interface
                 if (cols[j].template != null) {
-                    ele.push('<td width="' + cols[j].width + '" align="' + cols[j].align + '">');
+                    ele.push('<td  class="nnq-table-cell" width="' + cols[j].width + '" align="' + cols[j].align + '">');
                     ele.push('<div class="nnq-cell">');
                     ele.push(cols[j].template(json[i]));
                     ele.push('</div>');
@@ -134,19 +134,21 @@ nnq(function() {
                 } else {
                     if (cols[j].field == 'ck') {
                         if (cols[j].width == null) {
-                            ele.push('<td width="5%"');
+                            ele.push('<td  class="nnq-table-cell" width="5%"');
                             ele.push(' align="');
                             ele.push(cols[j].align);
+                            ele.push(' " value="');
+                            ele.push(json[i][cols[j].value]);
                             ele.push('">');
                         } else {
-                            ele.push('<td width="' + cols[j].width + '"');
+                            ele.push('<td  class="nnq-table-cell" width="' + cols[j].width + '"');
                             ele.push(' align="');
                             ele.push(cols[j].align);
                             ele.push('">');
                         }
                         ele.push('<label class="nnq-checkbox"> <span class="nnq-checkbox--input"> <input type="checkbox" hidden="hidden"> <span class="nnq-checkbox--icon"></span> </span> <span class="nnq-checkbox--lable"></span> </label></td>');
                     } else {
-                        ele.push('<td width="' + cols[j].width + '" align="' + cols[j].align + '">');
+                        ele.push('<td  class="nnq-table-cell" width="' + cols[j].width + '" align="' + cols[j].align + '">');
                         ele.push('<div class="nnq-cell">');
                         ele.push(json[i][cols[j].field]);
                         ele.push('</div>');
