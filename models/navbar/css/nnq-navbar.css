@@ -1,0 +1,44 @@
+.nnq-navbar {
+    margin: 0px -15px;
+    vertical-align: middle;
+}
+
+.nnq-navbar--background {
+    background-color: rgb(243, 242, 242);
+}
+
+.nnq-navbar a {
+    text-decoration: none;
+}
+
+.nnq-navbar a:visited {
+    color: black;
+}
+
+.nnq-navber-logo {
+    padding: 0px 15px;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.nnq-navbar-header,
+.nnq-navbar-collapse {
+    display: inline-block;
+}
+
+.nnq-navber-nav {
+    list-style: none;
+}
+
+.nnq-navber-right {
+    float: right;
+}
+
+.nnq-navber-nav>li:hover {
+    background-color: rgb(211, 209, 209);
+}
+
+.nnq-navber-nav>li {
+    display: inline-block;
+    padding: 15px 15px;
+}
