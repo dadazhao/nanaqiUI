@@ -1409,6 +1409,34 @@ body {
     font-weight: 500;
 }
 
+.nnq-file {
+    position: relative;
+    display: inline-block;
+    border: 1px solid #dcdfe6;
+    border-radius: 4px;
+    padding: 10px 12px;
+    overflow: hidden;
+    color: white;
+    background-color: #0993fc;
+    text-decoration: none;
+    text-indent: 0;
+    line-height: 20px;
+}
+
+.nnq-file input {
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+}
+
+.nnq-file:hover {
+    opacity: 0.65;
+    color: white;
+    text-decoration: none;
+}
+
 .nnq-checkbox {
     vertical-align: bottom;
     position: relative;
