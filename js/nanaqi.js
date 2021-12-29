@@ -236,7 +236,7 @@ nnq.data = function(obj, name, value) {
 nnq.fn.init.prototype = nnq.fn;
 window.nnq = nnq;
 
-// alter js
+// alert js
 nnq(function(nnq) {
 
     function init(nnq) {
@@ -246,39 +246,39 @@ nnq(function(nnq) {
     function initalizeElement(nnq) {
         var date = new Date().getTime();
         var id = date + Math.random();
-        var alter_ele = [];
-        alter_ele.push(' <div id="')
-        alter_ele.push(id);
-        alter_ele.push('" class="nnq-message nnq-alter__message nnq-message--');
-        alter_ele.push(nnq.alter.defaults.type);
-        alter_ele.push('" ');
-        var baseTop = nnq.alter.defaults.baseTop;
-        var alterNum = nnq.alter.defaults.alterList.length;
-        if (alterNum >= 1) {
-            baseTop = alterNum * nnq.alter.defaults.addTop + nnq.alter.defaults.baseTop;
+        var alert_ele = [];
+        alert_ele.push(' <div id="')
+        alert_ele.push(id);
+        alert_ele.push('" class="nnq-message nnq-alert__message nnq-message--');
+        alert_ele.push(nnq.alert.defaults.type);
+        alert_ele.push('" ');
+        var baseTop = nnq.alert.defaults.baseTop;
+        var alertNum = nnq.alert.defaults.alertList.length;
+        if (alertNum >= 1) {
+            baseTop = alertNum * nnq.alert.defaults.addTop + nnq.alert.defaults.baseTop;
         }
-        alter_ele.push('style="top:');
-        alter_ele.push(baseTop);
-        alter_ele.push('px;"');
-        alter_ele.push(' >');
-        alter_ele.push('<i class="nnq-message-icon ')
-        alter_ele.push(nnq.alter.defaults.icon);
-        alter_ele.push('"></i>');
-        alter_ele.push('<span class="nnq-message-lable">');
-        alter_ele.push(nnq.alter.defaults.message);
-        alter_ele.push('</span>');
-        alter_ele.push('</div>');
+        alert_ele.push('style="top:');
+        alert_ele.push(baseTop);
+        alert_ele.push('px;"');
+        alert_ele.push(' >');
+        alert_ele.push('<i class="nnq-message-icon ')
+        alert_ele.push(nnq.alert.defaults.icon);
+        alert_ele.push('"></i>');
+        alert_ele.push('<span class="nnq-message-lable">');
+        alert_ele.push(nnq.alert.defaults.message);
+        alert_ele.push('</span>');
+        alert_ele.push('</div>');
 
-        var alterText = alter_ele.join("");
+        var alertText = alert_ele.join("");
 
-        var element = { "id": "" + id, "datetime": date, "alterText": alterText };
-        nnq.alter.defaults.alterList.push(element);
-        alterElement(element);
+        var element = { "id": "" + id, "datetime": date, "alertText": alertText };
+        nnq.alert.defaults.alertList.push(element);
+        alertElement(element);
     }
 
-    function alterElement(element) {
+    function alertElement(element) {
         nnq("body").each(function() {
-            nnq(this).innerHTML(nnq(this).innerHTML() + element.alterText);
+            nnq(this).innerHTML(nnq(this).innerHTML() + element.alertText);
         })
     }
 
@@ -288,38 +288,38 @@ nnq(function(nnq) {
 
     function removeElement() {
 
-        var alterList = nnq.alter.defaults.alterList;
+        var alertList = nnq.alert.defaults.alertList;
 
-        for (var i = 0; i < alterList.length; i++) {
+        for (var i = 0; i < alertList.length; i++) {
             var date = new Date().getTime();
-            if (alterList[i].datetime < date - nnq.alter.defaults.lifeDate) {
-                nnq("#" + alterList[i].id).remove()
-                alterList.splice(i, i + 1);
+            if (alertList[i].datetime < date - nnq.alert.defaults.lifeDate) {
+                nnq("#" + alertList[i].id).remove()
+                alertList.splice(i, i + 1);
 
-                nnq(".nnq-alter__message").each(function() {
+                nnq(".nnq-alert__message").each(function() {
                     var top = nnq(this)[0].style.top.replace("px", "");
-                    nnq(this)[0].style.top = (Number(top) - nnq.alter.defaults.addTop) + "px";
+                    nnq(this)[0].style.top = (Number(top) - nnq.alert.defaults.addTop) + "px";
                 });
                 break;
             }
         }
     }
 
-    nnq.alter = function(options) {
+    nnq.alert = function(options) {
         if (typeof options == 'string') {
-            nnq.alter.defaults.message = options;
-            nnq.alter.defaults.type = "primary";
+            nnq.alert.defaults.message = options;
+            nnq.alert.defaults.type = "primary";
         } else {
-            nnq.extend(nnq.alter.defaults, options);
+            nnq.extend(nnq.alert.defaults, options);
         }
         init(nnq);
     }
 
-    nnq.alter.defaults = {
+    nnq.alert.defaults = {
         message: "Tips Message",
         type: "primary",
         icon: "nnq-icon-warnning",
-        alterList: [],
+        alertList: [],
         baseTop: 20,
         addTop: 64,
         lifeDate: 3000
