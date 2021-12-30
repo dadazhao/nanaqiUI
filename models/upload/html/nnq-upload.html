@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <div class="nnq-upload">
+    <div class="nnq-upload" ondrop="dropFile(event)" ondragover="allowDrop(event)">
         <form id="nnq-upload-form" action="" method="post" enctype="multipart/form-data">
             <i class="nnq-upload__icon nnq-icon-upload"></i>
             <b class="nnq-upload__tips">点击 / 拖拽文件上传</b>
@@ -28,6 +28,21 @@
         if (form) {
             form.submit();
         }
+    }
+
+    function dropFile(ev) {
+        ev.preventDefault();
+        var file = ev.dataTransfer.files[0];
+        alert("上传文件.");
+        // var reader = new FileReader();
+        // reader.readAsText(file)
+        // reader.onload = function() {
+        //     console.log(this.result);
+        // }
+    }
+
+    function allowDrop(ev) {
+        ev.preventDefault();
     }
 </script>
 
