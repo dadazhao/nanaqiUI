@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>上传组件样式</title>
+    <link href="../../common/css/common.css" type="text/css" rel="stylesheet" />
+    <link href="../../icons/css/nnq-icons.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="../../form/css/nnq-form.css" />
+    <link href="../css/nnq-upload.css" type="text/css" rel="stylesheet" />
+
+    <script src="../../../js/nanaqi.js" type="text/jscript"></script>
+    <script src="../js/nnq-upload.js" type="text/jscript"></script>
+</head>
+
+<body>
+    <div class="nnq-upload">
+        <form id="nnq-upload-form" action="" method="post" enctype="multipart/form-data">
+            <i class="nnq-upload__icon nnq-icon-upload"></i>
+            <b class="nnq-upload__tips">点击 / 拖拽文件上传</b>
+            <input class="nnq-upload__input" onchange="uploadFile()" type="file" name="files" multiple="multiple" />
+        </form>
+    </div>
+</body>
+<script>
+    function uploadFile() {
+        var form = document.getElementById("nnq-upload-form");
+        if (form) {
+            form.submit();
+        }
+    }
+</script>
+
+</html>

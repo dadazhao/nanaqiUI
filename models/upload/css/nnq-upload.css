@@ -1,0 +1,19 @@
+.nnq-upload {
+    text-align: center;
+    margin: 15px;
+    border: blanchedalmond dotted 3px;
+    cursor: pointer;
+    padding: 50px 0px;
+}
+
+.nnq-upload .nnq-upload__icon {
+    font-size: 6em;
+}
+
+.nnq-upload .nnq-upload__tips {
+    display: block;
+}
+
+.nnq-upload .nnq-upload__input {
+    display: none;
+}
