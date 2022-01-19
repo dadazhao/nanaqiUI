@@ -1,0 +1,66 @@
+.header {
+    height: 80px;
+    line-height: 80px;
+    box-shadow: 6px 0px 3px grey;
+}
+
+.header .logo {
+    float: left;
+    vertical-align: middle;
+}
+
+.header .logo a {
+    color: gray;
+    text-decoration: none;
+}
+
+.header .logo img {
+    vertical-align: middle
+}
+
+.header .nav-bar {
+    float: right;
+}
+
+.header .nav-bar .nav {
+    list-style: none;
+    padding-inline-start: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.header .nav-bar .nav .nav-item {
+    float: left;
+}
+
+.header .nav-bar .nav .nav-item a {
+    display: inline-block;
+    color: black;
+    opacity: .6;
+    margin: 0px 22px;
+    text-decoration: none;
+}
+
+.header .nav-bar .nav .nav-item a:hover {
+    opacity: 1;
+    color: orange;
+    font-weight: 400;
+    border-bottom: orange solid 5px;
+}
+
+.header .active {
+    color: orange;
+    font-weight: 400;
+    border-bottom: red solid 5px;
+}
+
+.header .nav-bar .nav .nav-item input {
+    border: 0px;
+    outline: none;
+    width: 200px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding: 12px 20px 12px 30px;
+    border-radius: 20px;
+    background-color: rgb(236, 233, 233);
+}

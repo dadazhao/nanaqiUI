@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <link href="css/nanaqi.css" type="text/css" rel="stylesheet" />
+    <link href="css/admin.css" type="text/css" rel="stylesheet" />
+    <title>NANAQI-UI</title>
+
+    <style>
+        .content {
+            width: 100%;
+            height: 90%;
+        }
+        
+        .content .container {
+            height: 100%;
+        }
+        
+        .content-left {
+            float: left;
+            width: 20%;
+            height: 100%;
+            padding-top: 20px;
+            overflow-y: auto;
+        }
+        
+        .content-right {
+            display: inline-block;
+            width: 80%;
+            height: 100%;
+            padding: 20px;
+            overflow-y: auto;
+        }
+        
+        .menu-bar {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .menu-bar .menu {
+            list-style: none;
+            padding-inline-start: 0px;
+            padding: 0px;
+            margin: 0px;
+        }
+        
+        .menu-bar .menu .menu-item a {
+            width: 100%;
+            height: 100%;
+            display: inline-block;
+            color: black;
+            opacity: .6;
+            font-size: 1.0em;
+            padding: 15px 0px;
+            padding-left: 20px;
+            text-decoration: none;
+        }
+        
+        .menu-bar .menu .menu-item a:hover {
+            opacity: 1;
+            color: orange;
+            font-weight: 400;
+            font-weight: bold;
+            border-left: orange solid 2px;
+        }
+        
+        .menu-bar .menu .menu-item .active {
+            opacity: 1;
+            color: orange;
+            font-weight: 400;
+            font-weight: bold;
+            /* border-right: red solid 2px; */
+        }
+        
+        .web-panel {
+            width: 100%;
+            border: 0px;
+        }
+        
+        .content-left::-webkit-scrollbar-track {
+            background: none;
+            border-radius: 2px;
+        }
+        
+        .content-left::-webkit-scrollbar-thumb {
+            background: none;
+        }
+        
+        .content-left:hover::-webkit-scrollbar-thumb {
+            background: #a7a6a6;
+            border-radius: 5px;
+        }
+        
+        .content-left::-webkit-scrollbar-corner {
+            background: #179a16;
+        }
+        
+        .content-right::-webkit-scrollbar-track {
+            background: none;
+            border-radius: 2px;
+        }
+        
+        .content-right::-webkit-scrollbar-thumb {
+            background: none;
+        }
+        
+        .content-right:hover::-webkit-scrollbar-thumb {
+            border-radius: 5px;
+        }
+        
+        .content-right::-webkit-scrollbar-corner {
+            background: #179a16;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="logo">
+                <h2>
+                    <a href="#">NANAQI-UI</a>
+                </h2>
+                <!-- 
+                    <a href="#">
+                        <img src="imgs/test.jpeg" width="80px" height="50px" alt="" />
+                    </a>
+                    -->
+            </div>
+            <div class="nav-bar">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <input placeholder="输入搜索内容" type="text" />
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="active" href="#">Component</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="container">
+            <div class="content-left">
+                <div class="menu-bar">
+                    <ul class="menu">
+                        <li class="menu-item">
+                            <a class="active" href="http://127.0.0.1:5501/index.html" target="panel">Button组件样式</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">菜单</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">菜单</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">菜单</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">菜单</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">菜单</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">菜单</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">菜单</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">菜单</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">菜单</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">菜单</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">菜单</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">菜单</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">菜单</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">菜单</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">菜单</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">菜单</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">菜单</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">菜单</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">菜单</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">菜单</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">菜单</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">菜单</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">菜单</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">菜单</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">菜单</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">菜单</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">菜单</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">菜单</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">菜单</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">菜单</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">菜单</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">菜单</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">菜单</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">菜单</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">菜单</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content-right">
+                <iframe class="web-panel" onload="this.height=panel.document.body.scrollHeight;" scrolling="no" name="panel"></iframe>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
