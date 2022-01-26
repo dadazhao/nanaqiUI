@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
     <link href="css/nanaqi.css" type="text/css" rel="stylesheet" />
     <link href="css/admin.css" type="text/css" rel="stylesheet" />
     <title>NANAQI-UI</title>
@@ -13,11 +14,11 @@
             width: 100%;
             height: 90%;
         }
-        
+
         .content .container {
             height: 100%;
         }
-        
+
         .content-left {
             float: left;
             width: 20%;
@@ -25,7 +26,7 @@
             padding-top: 20px;
             overflow-y: auto;
         }
-        
+
         .content-right {
             display: inline-block;
             width: 80%;
@@ -33,19 +34,19 @@
             padding: 20px;
             overflow-y: auto;
         }
-        
+
         .menu-bar {
             width: 100%;
             height: 100%;
         }
-        
+
         .menu-bar .menu {
             list-style: none;
             padding-inline-start: 0px;
             padding: 0px;
             margin: 0px;
         }
-        
+
         .menu-bar .menu .menu-item a {
             width: 100%;
             height: 100%;
@@ -57,7 +58,7 @@
             padding-left: 20px;
             text-decoration: none;
         }
-        
+
         .menu-bar .menu .menu-item a:hover {
             opacity: 1;
             color: orange;
@@ -65,7 +66,7 @@
             font-weight: bold;
             border-left: orange solid 2px;
         }
-        
+
         .menu-bar .menu .menu-item .active {
             opacity: 1;
             color: orange;
@@ -73,43 +74,43 @@
             font-weight: bold;
             /* border-right: red solid 2px; */
         }
-        
+
         .web-panel {
             width: 100%;
             border: 0px;
         }
-        
+
         .content-left::-webkit-scrollbar-track {
             background: none;
             border-radius: 2px;
         }
-        
+
         .content-left::-webkit-scrollbar-thumb {
             background: none;
         }
-        
+
         .content-left:hover::-webkit-scrollbar-thumb {
             background: #a7a6a6;
             border-radius: 5px;
         }
-        
+
         .content-left::-webkit-scrollbar-corner {
             background: #179a16;
         }
-        
+
         .content-right::-webkit-scrollbar-track {
             background: none;
             border-radius: 2px;
         }
-        
+
         .content-right::-webkit-scrollbar-thumb {
             background: none;
         }
-        
+
         .content-right:hover::-webkit-scrollbar-thumb {
             border-radius: 5px;
         }
-        
+
         .content-right::-webkit-scrollbar-corner {
             background: #179a16;
         }
@@ -156,10 +157,10 @@
                             <a class="active" href="models/button/index.html" target="panel">按钮组件</a>
                         </li>
                         <li class="menu-item">
-                            <a href="#">表单组件</a>
+                            <a href="models/form/index.html" target="panel">表单组件</a>
                         </li>
                         <li class="menu-item">
-                            <a href="#">图标组件</a>
+                            <a href="models/icons/index.html" target="panel">图标组件</a>
                         </li>
                         <li class="menu-item">
                             <a href="#">表格组件</a>
@@ -186,7 +187,8 @@
                 </div>
             </div>
             <div class="content-right">
-                <iframe class="web-panel" onload="this.height=panel.document.body.scrollHeight;" scrolling="no" name="panel"></iframe>
+                <iframe class="web-panel" onload="this.height=0;this.height=panel.document.body.scrollHeight;"
+                    scrolling="no" name="panel"></iframe>
             </div>
         </div>
     </div>
