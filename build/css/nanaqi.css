@@ -40,6 +40,36 @@ body {
     -webkit-tap-highlight-color: transparent;
 }
 
+.primary {
+    color: white;
+    background-color: #0993fc;
+}
+
+.secondary {
+    color: white;
+    background-color: #babbbc;
+}
+
+.success {
+    color: white;
+    background-color: #37dd28;
+}
+
+.danger {
+    color: white;
+    background-color: #e9433d;
+}
+
+.warning {
+    color: white;
+    background-color: #fdaf1d;
+}
+
+.info {
+    color: white;
+    background-color: #0dcaf1;
+}
+
 
 /*修改滚动条样式*/
 

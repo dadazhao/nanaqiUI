@@ -5,3 +5,12 @@ nnq__xxxx 通用特殊功能类(js操作)
 nnq-compontentName-xxx-...组件样式类
 nnq-compontentName--xxxx 组件样式功能类(快捷样式)
 nnq-compontentName__xxxx 组件特殊功能类(js操作)
+
+
+颜色表
+primary #0993fc #cce5ff
+secondary #babbbc #e2e3e5
+success #37dd28 #d4edda
+danger #e9433d #f8d7da
+warning #fdaf1d #fff3cd
+info #0dcaf1 #d1ecf1
