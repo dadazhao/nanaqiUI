@@ -1,0 +1,30 @@
+.white-panel-base {
+    padding: 15px;
+    background-color: white;
+}
+
+.gray-panel-base {
+    padding: 15px;
+    background-color: rgb(245, 245, 245);
+}
+
+.panel {
+    padding: 15px;
+    overflow: auto;
+    display: inline-block;
+}
+
+
+/* border css */
+
+.panel.round-full {
+    border-radius: 40px;
+}
+
+.panel.round {
+    border-radius: 5px;
+}
+
+.panel.circle {
+    border-radius: 50%;
+}

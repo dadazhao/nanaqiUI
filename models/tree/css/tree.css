@@ -1,0 +1,58 @@
+.tree {
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+    margin: 0px;
+    list-style-type: none;
+}
+
+.tree .tree {
+    padding-left: 60px;
+}
+
+.tree ul,
+.tree li {
+    position: relative;
+}
+
+.tree li {
+    padding: 6px;
+}
+
+.tree .cell {
+    display: inline-block;
+}
+
+.tree li {
+    position: relative;
+}
+
+.tree.line .tree>li:after {
+    content: '';
+    position: absolute;
+    top: 17px;
+    left: -40px;
+    width: 40px;
+    border: none;
+    border-top: 1px dotted black;
+}
+
+.tree.line .tree>li:not(:last-child):before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -40px;
+    height: 100%;
+    border: none;
+    border-left: 1px dotted black;
+}
+
+.tree.line .tree>li:last-child:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -40px;
+    height: 17px;
+    border: none;
+    border-left: 1px dotted black;
+}

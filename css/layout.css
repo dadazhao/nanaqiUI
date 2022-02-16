@@ -1,0 +1,39 @@
+.layout-top {
+    width: 100%;
+    line-height: 80px;
+    z-index: 999;
+    position: fixed;
+}
+
+.layout-left {
+    width: 20%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    padding-top: 80px;
+}
+
+.layout-right {
+    position: absolute;
+    top: 0px;
+    width: 80%;
+    left: 20%;
+    bottom: 0px;
+    padding-top: 80px;
+}
+
+.layout-main {
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    bottom: 0px;
+    padding-top: 80px;
+}
+
+.layout-content {
+    height: 100%;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: auto;
+}
