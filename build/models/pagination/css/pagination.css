@@ -1,0 +1,78 @@
+.pagination {
+    line-height: 28px;
+    user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-drag: none;
+    vertical-align: middle;
+}
+
+.pagination .pagination-total,
+.pagination .pagination-skip {
+    color: rgb(134, 133, 133);
+    margin-right: 10px;
+    display: inline;
+}
+
+.pagination .pagination-selecter {
+    padding: 3px;
+}
+
+.pagination .pagination-skip .pagination-skip-number {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0px 5px;
+    padding: 4px;
+    width: 50px;
+}
+
+.pagination,
+.pagination .icon {
+    margin: 0px;
+    padding: 7px 6px 4px 6px;
+    font-size: 1.3em;
+}
+
+.pagination .pagination-prev,
+.pagination .pagination-next {
+    background-color: white;
+    display: inline-block;
+    border: 0px;
+    margin: 0px;
+}
+
+.pagination .pagination-pager {
+    list-style: none;
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+}
+
+.pagination .pagination-pager .number {
+    display: inline-block;
+    cursor: pointer;
+    margin: 0px;
+    padding: 0px 10px;
+}
+
+.pagination .pagination-pager .number:active {
+    background-color: #409eff;
+    color: #fff;
+}
+
+.pagination--background .pagination-pager .number,
+.pagination--background .pagination-prev,
+.pagination--background .pagination-next {
+    background-color: #f4f4f5;
+}
+
+.pagination.pagination--background .pagination-pager--active {
+    background-color: #409eff;
+    color: #fff;
+}
+
+.pagination-pager--active {
+    background-color: #409eff;
+    color: #fff;
+}

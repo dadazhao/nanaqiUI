@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>上传组件样式</title>
+    <link href="../../css/nanaqi.css" type="text/css" rel="stylesheet" />
+    <script src="../../js/nanaqi.js" type="text/jscript"></script>
+    <link href="../icons/css/icons.css" type="text/css" rel="stylesheet" />
+    <link href="css/upload.css" type="text/css" rel="stylesheet" />
+    <script src="js/upload.js" type="text/jscript"></script>
+</head>
+
+<body>
+    <div class="upload" ondrop="dropFile(event)" ondragover="allowDrop(event)">
+        <form id="upload-form" action="" method="post" enctype="multipart/form-data">
+            <i class="icon icon-upload"></i>
+            <b class="tips">点击 / 拖拽文件上传</b>
+            <input class="input upload__input" onchange="uploadFile()" type="file" name="files" multiple="multiple" />
+        </form>
+    </div>
+</body>
+<script>
+    function uploadFile() {
+        var form = document.getElementById("upload-form");
+        if (form) {
+            form.submit();
+        }
+    }
+
+    function dropFile(ev) {
+        ev.preventDefault();
+        var file = ev.dataTransfer.files[0];
+        alert("上传文件.");
+        // var reader = new FileReader();
+        // reader.readAsText(file)
+        // reader.onload = function() {
+        //     console.log(this.result);
+        // }
+    }
+
+    function allowDrop(ev) {
+        ev.preventDefault();
+    }
+</script>
+
+</html>

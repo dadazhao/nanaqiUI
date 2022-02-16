@@ -1,0 +1,33 @@
+.card {
+    border: 1px solid #ebeef5;
+    background-color: #fff;
+    overflow: hidden;
+    color: #303133;
+    transition: .3s;
+}
+
+.card.border {
+    border: black solid 1px;
+}
+
+.card.radius {
+    border-radius: 6px;
+}
+
+.card.shadow {
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .1);
+}
+
+.card.hover:hover {
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .1);
+}
+
+.card.header {
+    padding: 18px 20px;
+    border-bottom: 1px solid #ebeef5;
+    box-sizing: border-box;
+}
+
+.card.body {
+    padding: 20px;
+}
